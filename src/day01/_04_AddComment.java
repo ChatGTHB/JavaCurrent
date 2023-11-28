@@ -1,6 +1,6 @@
 package day01;
 
-public class _01_AddComment {
+public class _04_AddComment {
 
     public static void main(String[] args) { // The main section program starts working from here
 
