@@ -3,14 +3,13 @@ package day01;
 public class _05_Example {
     public static void main(String[] args) {
 
-        System.out.println("Merhaba Dünya."); // noktalı virgül, emrim bitti yerine getir
-        // println : çift tırnak arasındakilerini ekrana aynen yazarım
+        System.out.println("Hello World!"); // semicolon, my order is over, fulfill it
+        // println: I write exactly what is between double quotes on the screen
 
-        System.out.println("Merhaba Dünya."); // ln var ise , yaz alt satıra geç
-        System.out.print("merhaba 1"); // ln yok ise, yaz aynı satırda devam et
-        System.out.print("    merhaba 2");
-        System.out.println();  // alt satıra geçer
-        System.out.print("merhaba 3");
-
+        System.out.println("Hello World!"); // If ln exists, write it and go to the next line
+        System.out.print("Hello 1"); // If ln does not exist, write and continue on the same line
+        System.out.print("    Hello 2");
+        System.out.println();  // moves to the next line
+        System.out.print("Hello 3");
     }
 }
