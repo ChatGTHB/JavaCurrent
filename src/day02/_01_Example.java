@@ -1,6 +1,6 @@
 package day02;
 
-public class _01_Example01 {
+public class _01_Example {
 
     public static void main(String[] args) { // Start
 
