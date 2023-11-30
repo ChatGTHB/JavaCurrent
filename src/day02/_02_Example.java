@@ -1,6 +1,7 @@
 package day02;
 
 public class _02_Example {
+
     public static void main(String[] args) {
 
         // Question: Write each letter of the word Monday on a separate line.
