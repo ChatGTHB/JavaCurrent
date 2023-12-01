@@ -8,7 +8,7 @@ public class _02_JavaDataTypes {
         // Integers
         byte byteValue = 7;              // Used for numbers between -128 and 127
         short shortValue = 1645;         // Between -32000 and 32000
-        int intValue = 2500000;          // -2.5 mil, +2.5 mil, when java sees a number it thinks int directly, DEFAULT
+        int intValue = 2500000;          // -2.5 million, +2.5 million, when java sees a number it thinks int directly, DEFAULT
         long longValue = 3333444444444l; // Since it accepts numbers as int by default
         // For long numbers, l should be placed at the absolute end.
 
