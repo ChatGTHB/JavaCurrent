@@ -9,8 +9,8 @@ public class _07_Variables {
         int perimeter = side + side + side + side;
 
         /**
-         int environment;
-         perimeter=side+side+side+side
+         int perimeter;
+         perimeter=side+side+side+side;
          */
 
         System.out.println("Environment of the Field = " + perimeter);
