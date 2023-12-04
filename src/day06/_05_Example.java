@@ -27,7 +27,7 @@ public class _05_Example {
         System.out.print("Country: ");
         String country = inputString.nextLine();
 
-        System.out.print("Are you a home owner? (T/F): ");
+        System.out.print("Are you a home owner? (True/Falsed): ");
         boolean owner = intBoolean.nextBoolean();
 
         System.out.println(street + " " + alley + " " + postCode + " " + country + " " + owner);
