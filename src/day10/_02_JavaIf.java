@@ -16,6 +16,6 @@ public class _02_JavaIf {
 
         if (studentGrade >= 50) System.out.println("You've passed, congratulations!");
 
-        if (studentGrade < 50) System.out.println("Sorry, you're left");
+        if (studentGrade < 50) System.out.println("Sorry, you're stuck");
     }
 }
