@@ -6,8 +6,6 @@ public class _01_JavaRandom {
         // Math.Random() : Produces a double number. Produces from 0 to 0.9999999999.
         // System.out.println(Math.random());
 
-        // I want a random integer between 0-10
-
         int randomNumber = (int) (Math.random() * 25);
         System.out.println("randomNumber = " + randomNumber);
     }
