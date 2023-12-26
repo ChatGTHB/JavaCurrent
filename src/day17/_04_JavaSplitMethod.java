@@ -22,7 +22,7 @@ public class _04_JavaSplitMethod {
         System.out.println("kelimeSayisi = " + (boslukSayisi + 1));
 
         //2.Yöntem
-        String[] kelimeler = cumle.split(" "); // bosluga göre bol ve elemanları dizi olarak ver
+        String[] kelimeler = cumle.split(" "); // bosluga göre böl ve elemanları dizi olarak ver
         System.out.println("kelimeler = " + kelimeler.length);
 
         for (int i = 0; i < kelimeler.length; i++) {

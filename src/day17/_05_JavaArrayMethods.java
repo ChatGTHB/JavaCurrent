@@ -21,7 +21,7 @@ public class _05_JavaArrayMethods {
         System.out.println("en büyük = " + a[a.length - 1]);
 
         // Elemanları hızlı doldurma aynı değerle
-        Arrays.fill(a, 5);//hepsine 5 doldur
+        Arrays.fill(a, 5); // hepsine 5 doldur
         System.out.println("a = " + Arrays.toString(a));
     }
 }
