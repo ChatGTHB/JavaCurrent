@@ -20,7 +20,7 @@ public class _01_Sets {
         // fakat bana şöyle dizi lazım; içine verileri attığımda tekrar eden veri gelirse EKLEMESİN,
         // 2.cisi, bu dizi
         // a) istersem, ne eklersem ekliyim, herzaman içindekileri SIRALI tutsun,
-        // b) istersem, eklenmese sırasında tutsun
+        // b) istersem, eklenme sırasında tutsun
         // c) istersem, en hızlı çalışmak için, kendisi istediği sırada tutsun
 
         // Tek tek eleman eleman işlemler için değil de, işlem yapılacağı zaman, bütün elemanların işleme
