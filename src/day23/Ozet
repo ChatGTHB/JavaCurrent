@@ -1,0 +1,22 @@
+Array : int[]
+index var : dizi[i] gibi
+ELEMAN TEKRARI olabilir
+fori (sıra garanti, çünkü index göre çalışıyor)
+foreach (evet, sıra garanti değil)
+boyut sabit
+
+ArrayList
+index var : get(i) gibi
+ELEMAN TEKRARI olabilir
+fori(sıra garanti, çünkü indexe göre çalışıyor)
+foreach (evet, sıra garanti değil)
+boyut sabit değil, değişken
+
+SET lerde
+index yok
+fori  yok
+ELEMAN TEKRARI YOK
+boyut sabit değil, değişken
+foreach (evet, sıra garanti değil)
+sıra garanti istiyorsan (ITERATOR - ittirgeç)
+
