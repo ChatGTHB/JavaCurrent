@@ -4,7 +4,8 @@ import java.util.Scanner;
 
 public class _05_IfElseIF {
     public static void main(String[] args) {
-        // Soru : Kullanıcıdan  Fizik:90   şeklinde not bilgisini alınız.
+
+        // Example : Kullanıcıdan  Fizik:90   şeklinde not bilgisini alınız.
         // >= 90 için A
         // >= 80 için B
         // >= 70 için C
