@@ -1,0 +1,4 @@
+         Bir okulda kayıt programı için Ogrenci bilgilerini alan modül
+         yazılacaktır. Ogrenciye ait bilgiler (adi, soyadi, sinifi ve adres) vardır.
+         Bu yapıyı oluşturunuz. Bir tane öğrenci tanımlayarak
+         öğrenci bilgilerini kullanıcıdan alarak doldurunuz ve yazdırınız
