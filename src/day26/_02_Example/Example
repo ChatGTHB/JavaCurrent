@@ -1,0 +1,6 @@
+ // Bir kampus programı için asagıdaki özellikte bilgilerin
+ // kaydedileceği clasları yazınız.
+ // Ogrenci : okulNo, Adı, Soyadi, okulu
+ // Okul : okulAd, MudurAdi, okulAdres
+ // Bu şekilde 1 öğrenci tanımlayıp bütün bilgileri kendiniz
+ // atayıp  yazdırınız.
