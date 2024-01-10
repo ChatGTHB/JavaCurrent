@@ -1,0 +1,5 @@
+    // 1- Adım : Person isimli bir class tanımlayınız : name, surname, age
+    // 2- Adım : main de 2 tane bu sınıftan nesne oluşturup deger atayınız.
+    // 3- Adım : Bu degerlerı yazıdırınız.
+    // 4- Adım : getBirthYear isminde Person a ait bir metod yazınız,
+    //           çalıştığında kişinin doğum yılını versin.
