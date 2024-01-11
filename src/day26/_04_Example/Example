@@ -1,0 +1,5 @@
+    // 1-Adım :Rectangle isminde  bir tip tanımlayınız.
+    //         özellikleri : width(int), length(int)
+    // 2-Adım :Çevresini bulmak üzere "cevre" isminde bir metod yazınız.
+    // 3-Adım :Alanını bulmak üzere "alan" isimli bir metod yazınız.
+    // 4-Adım :1 tane nesne ye deger vererek metodların sonuçlarını yazdırınız.
