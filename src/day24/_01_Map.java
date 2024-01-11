@@ -30,6 +30,7 @@ public class _01_Map {
 
         System.out.println("hashMap.keySet() = " + hashMap.keySet());
         System.out.println("hashMap.values() = " + hashMap.values());
+        System.out.println("hashMap.entrySet() = " + hashMap.entrySet());
 
         hashMap.remove(1001);
         System.out.println("Hash Map = " + hashMap);
