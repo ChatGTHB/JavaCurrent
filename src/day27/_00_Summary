@@ -1,0 +1,15 @@
+Static ve Static olmayan metodların farkı ve kullanım amacı
+
+-STATIC metodlar
+ 1) Başına static kelimesi getirilir
+ 2) Nesneyi değil GENELi yani tüm nesneleri kapsayan, yani nesne
+   bağımsız metodları nesne olusturmadan kullanmak için olusturulur.
+ 3) Bu metodlar nesne özelinde değil, TİPe ait metodlar oldugu için
+   TİP adı ile direk kullanılabilirler.
+ 4) Buna uygun Javada var olan örnek static metodlar Math.random gibi
+   veya Integer.parseInt() gibi fonksiyonlardır.
+
+-STATIC olmayan metodlar
+ 1) Bu metodlar nesne özelinde çalışan metodlardır.
+ 2) Nesne özelinde nesneye ait değerlerle çalışmak zorunda olduğu için
+    mutlaka new ile nesne oluşturulup. Nesne değişkeni ile kullanılırlar.
