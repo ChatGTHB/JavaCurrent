@@ -1,0 +1,11 @@
+    // Book class yazınız.fields: name, publishYear(yayın yılı),author(yazar)
+    // 3 adet Constructor ekleyiniz.
+    // Kitapların özelliklerini yazdıran bir metod ekleyiniz.
+    // 3 adet kitabı farklı constructorla oluşturup, mainde yazdırınız.
+
+
+    Book()
+
+    Book(name, publishYear, author)
+
+    Book(name)
