@@ -1,0 +1,5 @@
+    // Bir banka class ı tanımlayınız.
+    // 3 adet field ekleyiniz.(adi, subeSayisi, kurulusYili)
+    // 3 adet constructor ekleyin.
+    // toString metodu oluşturun.
+    // 3 tane nesne oluşturup mainde yazdırınız.
