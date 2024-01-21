@@ -1,0 +1,6 @@
+    // Sabitler isimli bir Classda sabit bir şekilde
+    // bir gündeki saat sayısı, bir saatdaki dakika sayısı ve
+    // bir dakikadaki saniye sayısını tanımlayınız.
+    // mainde kullanıcıdan gun, saat, dakika alarak toplam
+    // saniyeyi bulunuz.
+
