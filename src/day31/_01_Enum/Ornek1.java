@@ -1,4 +1,4 @@
-package Gun31._01_Enum;
+package day31._01_Enum;
 
 public class Ornek1 {
 

@@ -1,4 +1,4 @@
-package Gun31._01_Enum;
+package day31._01_Enum;
 
 enum Aylar {
     Tanimsiz, OCAK, SUBAT, MART, NISAN, MAYIS, HAZIRAN, TEMMUZ, AGUSTOS, EYLUL, EKIM, KASIM, ARALIK
