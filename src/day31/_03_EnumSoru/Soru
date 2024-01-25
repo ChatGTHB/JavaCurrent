@@ -1,0 +1,9 @@
+    // Bir User yetkilendirme modülü yapılması isteniyor.
+    // USER ROLÜ : ADMIN, MUDUR, SATIS, PERSONEL
+    // USER STATUSU : AKTIF, PASIF
+    // Yukarıdaki şekilde bir USER(username, role, statu) class ı tanımlayınız
+
+    // Farklı yetki ve statüde 2 kullanıcı ve bir de ADMIN
+    // kullanıcısı tanımlayınız.
+    // UserSilme isimli fonksiyona bu userları gönderiniz.
+    // ADMIN kullanıcısı için bu user silinemez uyarısı verdirelim
