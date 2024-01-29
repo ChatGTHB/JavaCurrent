@@ -1,0 +1,17 @@
+Calisan isminde bi class tanımlayınız properties/fields(isim, tabanAylik(double), maasKatSayisi(int))
+consructor ve maashesapla Metodu(tabanAylik*maasKatSayisi) ekleyiniz. toString metodu ekleyiniz.
+GenelMudur isimli bir classı Calisan sınıfından türetip, extra field olarak tazminat ekleyiniz.
+GenelMudur classında maasHesaplaya tazminat ı da ekleyiniz.
+SirketMain diye yazacağınız main in olduğu yerde, 1 calısan ve 1 GenelMüdür tanımlayarak,
+maaşları hesaplatıp, bordroyu yazdırınız.
+
+maasHesapla()
+{
+   return tabanAylik*maasKatSayisi
+}
+
+genel müdürün metodu
+maasHesapla()
+{
+   return tabanAylik*maasKatSayisi+tazminat
+}
