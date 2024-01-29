@@ -1,0 +1,10 @@
+    1- fieldları model, marka, fiyat olan bir Araba sınıfı tanımlayınız.
+    2- Araba sınıfına model, marka, fiyat dan oluşan bir constructor tanımlayınız.
+    3- Bütün fieldlar için encapsulation uygulayınız.
+    4- ArabaBayi isimli bir class tanımlayınız, fieldları bayiAd, maxAracYeri,
+       ArrayList cinsinden arabalari olsun.
+    5- main metodunun olduğu ArabamCom isimli bir sınıf oluşturunuz.
+    6- bir ArabaBayi nesnesi oluşturup, bu bayiye maxAracYeri miktarına ulaşana kadar kullanıcıdan alarak
+       Araba ekleyiniz. Fakat oluşturacağınız arabaların modeli 2000 den büyük olmalı.
+       bu modelden küçük eklenmek istenir ise yerine başka araba isteyiniz.
+    7- arabaların hepsine eşsiz bir ID ataması yapınız.
