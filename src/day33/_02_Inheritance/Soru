@@ -1,0 +1,6 @@
+Hayvan renk, kilo, cinsi, no    diye bir tipvar
+
+kedi  tip   extends hayvan
+köpek tip   extends hayvan
+ördek tip   extends hayvan kanat uzunluğu
+yılan tip   extends hayvan uzunluğu
