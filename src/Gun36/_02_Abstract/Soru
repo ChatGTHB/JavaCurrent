@@ -1,0 +1,13 @@
+1- içinde name field ı olan Sekil isimli bir Abstract Class yazınız.
+2- Bu classın Alan ve cevre abstract metodları ve içinde alan ve cevre nin sonucu olan toString somut metodu,
+   sekilin adını veren getName somut metodu ve ciz isimli somut metodlarını ekleyiniz.
+3- Bu sınıftan Dikdörtgen ve Daire isimli 2 class oluşturunuz.
+4- Bunlardan birer örnek main metodunda çalıştırınız.
+
+
+somut -> yani içi dolu -> yani gövdeli metod -> concrate
+void ses(){
+}
+
+abstract -> yani içi boş -> yani gövdesiz -> soyut
+void ses();  -> bu yazılan kısma metodun imzası
