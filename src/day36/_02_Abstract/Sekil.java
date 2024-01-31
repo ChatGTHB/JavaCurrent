@@ -1,4 +1,4 @@
-package Gun36._02_Abstract;
+package day36._02_Abstract;
 
 public abstract class Sekil {
     private String name;

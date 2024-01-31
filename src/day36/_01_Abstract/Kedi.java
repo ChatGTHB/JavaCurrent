@@ -1,4 +1,4 @@
-package Gun36._01_Abstract;
+package day36._01_Abstract;
 
 //Inheritance   //Interface
 public class Kedi extends Hayvan {

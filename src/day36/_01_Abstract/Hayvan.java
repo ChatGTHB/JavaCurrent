@@ -1,4 +1,4 @@
-package Gun36._01_Abstract;
+package day36._01_Abstract;
 
 // Abstract class
 // Abstract o zaman superclass ve superinterface ayni classda olmasi

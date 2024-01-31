@@ -1,4 +1,4 @@
-package Gun36._03_Abstract;
+package day36._03_Abstract;
 
 public class YemekDunyasi {
 
