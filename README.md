@@ -1,2 +1,2 @@
 # JavaCurrent
-Current Java Training
+Current Core Java Training
