@@ -5,6 +5,5 @@ public class _01_JavaIntro {
 
         System.out.println("Hello World!");
         System.out.println("Our name is Java, our surname is Algorithm");
-
     }
 }

@@ -1,6 +1,7 @@
 package day01;
 
 public class _03_JavaIntro {
+
     public static void main(String[] args) {
 
         // Parentheses are immune, so if you get errors, check them first
