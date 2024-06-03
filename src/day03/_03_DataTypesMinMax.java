@@ -1,6 +1,7 @@
 package day03;
 
 public class _03_DataTypesMinMax {
+
     public static void main(String[] args) {
 
         System.out.println("Byte.MIN_VALUE = " + Byte.MIN_VALUE);

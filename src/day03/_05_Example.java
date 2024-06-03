@@ -1,6 +1,7 @@
 package day03;
 
 public class _05_Example {
+
     public static void main(String[] args) {
 
         /**
