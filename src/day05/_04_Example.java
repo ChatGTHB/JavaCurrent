@@ -3,6 +3,7 @@ package day05;
 import java.util.Scanner;
 
 public class _04_Example {
+
     public static void main(String[] args) {
 
         // Take the user's name and surname and print them on the screen

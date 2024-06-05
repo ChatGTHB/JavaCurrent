@@ -3,6 +3,7 @@ package day05;
 import java.util.Scanner;
 
 public class _02_JavaScanner {
+
     public static void main(String[] args) {
 
         // type  name    first value, new car from cars

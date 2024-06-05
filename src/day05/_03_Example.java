@@ -3,6 +3,7 @@ package day05;
 import java.util.Scanner;
 
 public class _03_Example {
+
     public static void main(String[] args) {
 
         // Print an entered name to the screen again.
