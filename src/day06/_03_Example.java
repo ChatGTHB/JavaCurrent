@@ -3,6 +3,7 @@ package day06;
 import java.util.Scanner;
 
 public class _03_Example {
+
     public static void main(String[] args) {
 
         // Take the user's weight (kg) as double, height (m) as double and print your height ... and weight ... on one line.

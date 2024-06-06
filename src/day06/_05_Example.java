@@ -3,6 +3,7 @@ package day06;
 import java.util.Scanner;
 
 public class _05_Example {
+
     public static void main(String[] args) {
 
         /**

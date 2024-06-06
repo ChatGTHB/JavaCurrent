@@ -1,6 +1,7 @@
 package day06;
 
 public class _06_StringLength {
+
     public static void main(String[] args) {
 
         // StringLength -> gives the length of a String (how many letters there are)

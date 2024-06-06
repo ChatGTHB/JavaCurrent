@@ -1,6 +1,7 @@
 package day06;
 
 public class _07_StringCharAt {
+
     public static void main(String[] args) {
 
         // charAt(index) ; Returns the character at the desired point
