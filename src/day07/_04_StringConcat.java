@@ -1,6 +1,7 @@
 package day07;
 
 public class _04_StringConcat {
+
     public static void main(String[] args) {
 
         // concat : concatenates one string to another

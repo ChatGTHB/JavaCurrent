@@ -1,6 +1,7 @@
 package day07;
 
 public class _01_StringIndexOf {
+
     public static void main(String[] args) {
 
         // IndexOf(letters)           -> give Index of given letters

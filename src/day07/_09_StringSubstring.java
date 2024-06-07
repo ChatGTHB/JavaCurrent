@@ -1,6 +1,7 @@
 package day07;
 
 public class _09_StringSubstring {
+
     public static void main(String[] args) {
 
         // Substring: Gets a fragment from a string

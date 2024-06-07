@@ -1,6 +1,7 @@
 package day07;
 
 public class _02_StringLastIndexOf {
+
     public static void main(String[] args) {
 
         // indexOf : Starts the search from the beginning, gives the room number

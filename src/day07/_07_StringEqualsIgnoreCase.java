@@ -1,6 +1,7 @@
 package day07;
 
 public class _07_StringEqualsIgnoreCase {
+
     public static void main(String[] args) {
 
         // EqualsIgnoreCase

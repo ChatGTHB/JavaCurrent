@@ -1,6 +1,7 @@
 package day07;
 
 public class _05_StringContains {
+
     public static void main(String[] args) {
 
         // contains : Returns whether the searched letter/s are in the string or not

@@ -3,6 +3,7 @@ package day07;
 import java.util.Scanner;
 
 public class _10_Example {
+
     public static void main(String[] args) {
 
         // Separate the name and surname of a name and surname entered at once and print them separately. (name and surname only)

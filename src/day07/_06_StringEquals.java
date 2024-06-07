@@ -1,6 +1,7 @@
 package day07;
 
 public class _06_StringEquals {
+
     public static void main(String[] args) {
 
         // Equals: Asks if 1 string is equal to the other
