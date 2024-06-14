@@ -1,6 +1,6 @@
 package day04;
 
-public class _02_TypeConversions {
+public class _04_TypeConversions {
 
     public static void main(String[] args) {
 

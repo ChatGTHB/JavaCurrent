@@ -1,6 +1,6 @@
 package day04;
 
-public class _03_WideningCasting {
+public class _05_WideningCasting {
 
     public static void main(String[] args) {
 

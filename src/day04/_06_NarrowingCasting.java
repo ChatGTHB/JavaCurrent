@@ -1,6 +1,6 @@
 package day04;
 
-public class _04_NarrowingCasting {
+public class _06_NarrowingCasting {
 
     public static void main(String[] args) {
 

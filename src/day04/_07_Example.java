@@ -4,17 +4,25 @@ public class _07_Example {
 
     public static void main(String[] args) {
 
-        // Find the average of 3 grades given as string ("82","95","56").
+        /**
+         10/3 ->  3.333333    expected situation
+         Let's talk about what the computer does
+         int/int -> It gives the integer part, so 10/3   -> 3
+         */
 
-        String textGrade1 = "95";
-        String textGrade2 = "82";
-        String textGrade3 = "56";
+        /**
+         If you want a fractional result, at least one of them must be a double so that the computer will give a flawed result.
+         double/int or int/double or double/double must be -> 3.33333
+         */
 
-        double doubleGrade1 = Double.parseDouble(textGrade1);
-        double doubleGrade2 = Double.parseDouble(textGrade2);
-        double doubleGrade3 = Double.parseDouble(textGrade3);
+        int number1 = 10;
+        int number2 = 3;
 
-        double average = (doubleGrade1 + doubleGrade2 + doubleGrade3) / 3;
-        System.out.println("average = " + average);
+        int fullResult = number1 / number2;  // int/int
+        System.out.println("fullResult = " + fullResult); // 3
+
+        // If you want fractional results
+        double doubleResult = number1 / (double) number2;
+        System.out.println("doubleResult = " + doubleResult); // 3.33333
     }
 }

@@ -1,15 +1,15 @@
 package day04;
 
-public class _01_JavaString {
+public class _02_JavaString {
 
     public static void main(String[] args) {
 
-        int number = 0; //int: type, number: name of the variable, 0: initial value
+        int number = 0; // int: type, number: name of the variable, 0: initial value
 
         String name = "Joseph";
 
         System.out.println("number = " + number); // number = 0
-        System.out.println("name = " + name);     // ad = ismet
+        System.out.println("name = " + name);     // ad = Joseph
 
         String surname = "Burns";
         System.out.println("surname = " + surname); // surname = Burns

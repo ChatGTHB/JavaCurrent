@@ -1,6 +1,6 @@
 package day04;
 
-public class _00_Printf {
+public class _01_Printf {
 
     public static void main(String[] args) {
 
