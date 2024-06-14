@@ -6,16 +6,18 @@ public class _05_Example {
 
     public static void main(String[] args) {
 
-        // Get the user's name and surname separately from the user
-        // print them to the screen together.
+        // Print the sum of the 2 integers you receive from the user to the screen.
         Scanner input = new Scanner(System.in);
 
-        System.out.print("Your name:");
-        String name = input.nextLine();
+        System.out.print("Number1 = ");
+        int number1 = input.nextInt();
 
-        System.out.print("Your surname:");
-        String surname = input.nextLine();
+        System.out.print("Number2 = ");
+        int number2 = input.nextInt();
 
-        System.out.println("Your name and surname: " + name + " " + surname);
+        int total = number1 + number2;
+        System.out.println("Total = " + total); // Method 1
+
+        System.out.println("Total = " + (number1 + number2)); // Method 2
     }
 }

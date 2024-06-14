@@ -6,9 +6,9 @@ public class _09_Example {
 
         // Find the average of 3 grades given as string ("82","95","56").
 
-        String textGrade1 = "95";
+        String textGrade1 = "95.5";
         String textGrade2 = "82";
-        String textGrade3 = "56";
+        String textGrade3 = "56.5";
 
         double doubleGrade1 = Double.parseDouble(textGrade1);
         double doubleGrade2 = Double.parseDouble(textGrade2);
