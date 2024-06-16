@@ -26,4 +26,3 @@ public class _01_Example {
         System.out.println("The area = " + area);
     }
 }
-

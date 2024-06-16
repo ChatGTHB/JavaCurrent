@@ -13,7 +13,7 @@ public class _04_Example {
 
         Scanner input = new Scanner(System.in);
 
-        System.out.print("Are you student ? =");
+        System.out.print("Are you student ? = ");
         boolean answer = input.nextBoolean(); // True,true or False,false
 
         System.out.println("answer = " + answer);
