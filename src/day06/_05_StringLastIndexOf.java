@@ -1,6 +1,6 @@
-package day07;
+package day06;
 
-public class _02_StringLastIndexOf {
+public class _05_StringLastIndexOf {
 
     public static void main(String[] args) {
 

@@ -1,6 +1,6 @@
 package day06;
 
-public class _07_StringCharAt {
+public class _02_StringCharAt {
 
     public static void main(String[] args) {
 

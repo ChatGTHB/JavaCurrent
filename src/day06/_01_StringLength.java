@@ -1,6 +1,6 @@
 package day06;
 
-public class _06_StringLength {
+public class _01_StringLength {
 
     public static void main(String[] args) {
 
