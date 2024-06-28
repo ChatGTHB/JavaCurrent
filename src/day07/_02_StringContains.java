@@ -1,6 +1,6 @@
 package day07;
 
-public class _05_StringContains {
+public class _02_StringContains {
 
     public static void main(String[] args) {
 

@@ -1,6 +1,6 @@
 package day07;
 
-public class _04_StringConcat {
+public class _01_StringConcat {
 
     public static void main(String[] args) {
 

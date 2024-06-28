@@ -1,6 +1,6 @@
 package day07;
 
-public class _06_StringEquals {
+public class _03_StringEquals {
 
     public static void main(String[] args) {
 

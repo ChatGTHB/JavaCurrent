@@ -1,6 +1,6 @@
 package day07;
 
-public class _08_StringIsEmpty {
+public class _05_StringIsEmpty {
 
     public static void main(String[] args) {
 

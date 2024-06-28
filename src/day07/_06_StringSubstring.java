@@ -1,6 +1,6 @@
 package day07;
 
-public class _09_StringSubstring {
+public class _06_StringSubstring {
 
     public static void main(String[] args) {
 
