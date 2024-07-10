@@ -2,15 +2,21 @@ package day09;
 
 public class _01_JavaAritmeticOperators {
     public static void main(String[] args) {
+        // Arithmetic operations in Java
+        int a = 9;
+        int b = 5;
 
-        int counter = 0;
+        System.out.println("Aggregation Process = " + (a + b)); // 14
+        System.out.println("Extraction Process = " + (a - b));  // 4
+        System.out.println("Multiplication = " + (a * b));      // 45
 
-        counter = counter + 1;   // Increase the value of the counter by 1 : 1
-        counter++;               // Increase the value of the counter by 1 : 2
-        ++counter;               // Increase the value of the counter by 1 : 3
+        System.out.println("Division = " + (a / b));            // 1
+        System.out.println("Division = " + (a / (double) b));   //1.8
+        // The normal result is 1.8, but the computer discards the fraction if they are both of the integer type
+        // For this reason, the result is 1, it does not round, the intint partition result is int
+        // If you want a fractional result, at least one of the participants must be double
 
-        counter = counter - 1;   // Decreases the value of the counter by 1 : 2
-        counter--;               // Decreases the value of the counter by 1 : 1
-        --counter;               // Decreases the value of the counter by 1 : 0
+        int remaining = 9 % 5;  // Modül % --> This process divides and gives only the remainder
+        System.out.println("remaining = " + remaining);
     }
 }

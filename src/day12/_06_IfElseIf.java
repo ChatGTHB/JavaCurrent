@@ -2,7 +2,7 @@ package day12;
 
 import java.util.Scanner;
 
-public class _05_IfElseIF {
+public class _06_IfElseIf {
     public static void main(String[] args) {
 
         // Example : Kullanıcıdan  Fizik:90   şeklinde not bilgisini alınız.

@@ -3,9 +3,7 @@ package day17;
 import java.util.Arrays;
 
 public class _05_JavaArrayMethods {
-
     public static void main(String[] args) {
-
         String[] isimler = {"Ahmet", "Zeynep", "Roman", "Cihan"};
 
         //diiyi ekrana direk yazdırmak

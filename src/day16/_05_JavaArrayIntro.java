@@ -2,7 +2,6 @@ package day16;
 
 public class _05_JavaArrayIntro {
     public static void main(String[] args) {
-
         int sayi;  // 1 tane sayı saklamak için
 
         int ogrNot = 0;

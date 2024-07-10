@@ -1,8 +1,8 @@
-package day10;
+package day11;
 
 import java.util.Scanner;
 
-public class _07_IfElse {
+public class _02_IfElse {
     public static void main(String[] args) {
 
         // Print whether an entered number is odd or even.

@@ -5,17 +5,22 @@ import java.util.Scanner;
 public class _02_JavaIf {
     public static void main(String[] args) {
 
-        //  According to a student's grade entered,
-        //  if it is 50 and greater than 50, you pass,
-        //  if it is smaller, you fail.
+        // Print whether an entered number is negative or positive.
+        // If it is zero, print zero.
 
         Scanner input = new Scanner(System.in);
+        System.out.print("Enter a number= ");
+        int number = input.nextInt();
 
-        System.out.print("Student grade= ");
-        int studentGrade = input.nextInt();
+        if (number > 0) System.out.println("positive");
 
-        if (studentGrade >= 50) System.out.println("You've passed, congratulations!");
+        if (number < 0) System.out.println("negative");
 
-        if (studentGrade < 50) System.out.println("Sorry, you're stuck");
+        if (number == 0) System.out.println("zero");
+
+        // You can always use {} parentheses,
+        // but it is not mandatory to use them
+        // if there is only one command that will work
+        // when the if condition is met.
     }
 }

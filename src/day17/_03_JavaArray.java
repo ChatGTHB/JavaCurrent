@@ -3,7 +3,6 @@ package day17;
 public class _03_JavaArray {
 
     public static void main(String[] args) {
-
         // 5 tv kanalı ismini bir diziye doldurunuz. trt, kanald,atv,fox,habertürk
         // Daha sonra random olarak bir tanesini seçip ekrana seçileni yazıdırnız.
 

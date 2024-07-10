@@ -5,35 +5,24 @@ import java.util.Scanner;
 public class _04_JavaIf {
     public static void main(String[] args) {
 
-        // Print whether there is a lowercase or uppercase letter a in an entered sentence.
-        // In the form of YES or NO
-
-        //        weather  -> Say YES
-        //        WEATHER  -> Say YES
+        // Print whether an entered number is odd or even
+        // Print single or double
 
         Scanner input = new Scanner(System.in);
 
-        System.out.print("Enter a sentence: ");
-        String sentence = input.nextLine();
-        sentence = sentence.toUpperCase();
+        System.out.print("Enter a number: ");
+        int number = input.nextInt();
 
-        if (sentence.contains("A")) System.out.println("YES");
+        int remain = number % 2;  // What is the remainder of this number?
 
-        if (!sentence.contains("A")) System.out.println("NO");
+        if (remain == 0) System.out.println("Even Number");
 
-
-        /********* Different Method  ******************/
-
-        String sentenceWithoutA = sentence.replace("A", "").replace("a", "");
-        // String sentenceWithoutA = sentence.replaceAll("[aA]","");
-
-        if (sentenceWithoutA.length() == sentence.length()) System.out.println("NO");
-
-        if (sentenceWithoutA.length() != sentence.length()) System.out.println("YES");
+        if (remain == 1) System.out.println("Odd Number");
     }
 }
 
-
-
-
-
+//        1,3,5,9,1003,57
+//        If I divide them by 2, the remainder is 1
+//
+//        246,1000,40
+//        If I divide them by 2, the rest is always 0

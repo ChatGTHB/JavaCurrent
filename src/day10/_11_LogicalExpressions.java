@@ -2,9 +2,8 @@ package day10;
 
 import java.util.Scanner;
 
-public class _08_LogicalExpressions {
+public class _11_LogicalExpressions {
     public static void main(String[] args) {
-
         // Logical expressions
         // and       &&
         // or        ||
@@ -17,7 +16,8 @@ public class _08_LogicalExpressions {
         System.out.print("Student Grade: ");
         int studentGrade = input.nextInt();
 
-        if (0 < studentGrade && studentGrade <= 100) System.out.println("Valid grade");
-        else System.out.println("Invalid Grade");
+        if (0 < studentGrade && studentGrade <= 100) {
+            System.out.println("Valid grade");
+        } else System.out.println("Invalid Grade");
     }
 }

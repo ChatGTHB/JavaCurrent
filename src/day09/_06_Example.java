@@ -4,19 +4,19 @@ import java.util.Scanner;
 
 public class _06_Example {
     public static void main(String[] args) {
-
-        // Print whether an entered number is an odd number or not.
-        // true veya false
+        // Print whether the 2 numbers entered by the user are equal to each other
 
         Scanner input = new Scanner(System.in);
-        System.out.print("Number= ");
-        int number = input.nextInt();
 
-        int remaining = number % 2; // The module always gives the rest
+        System.out.print("Number1= ");
+        int number1 = input.nextInt();
 
-        System.out.println("Is odd number? " + (remaining == 1));  // Method1
+        System.out.print("Number2= ");
+        int number2 = input.nextInt();
 
-        boolean isOdd = (remaining == 1);
-        System.out.println("isOdd = " + isOdd);              // Method2
+        System.out.println("Eşit Mi = " + (number1 == number2)); // Method 1
+
+        boolean isEquals = (number1 == number2);
+        System.out.println("isEquals = " + isEquals);            // Method 2
     }
 }

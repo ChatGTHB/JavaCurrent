@@ -2,7 +2,7 @@ package day11;
 
 import java.util.Scanner;
 
-public class _03_Example {
+public class _06_Example {
     public static void main(String[] args) {
         // Find out if 2 int numbers entered next to each other
         // with a space between them are equal to each other

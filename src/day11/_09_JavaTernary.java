@@ -2,7 +2,7 @@ package day11;
 
 import java.util.Scanner;
 
-public class _06_JavaTernary {
+public class _09_JavaTernary {
     public static void main(String[] args) {
 
         /**

@@ -5,48 +5,21 @@ import java.util.Scanner;
 public class _03_JavaIf {
     public static void main(String[] args) {
 
-        // Find out if the letter a is mentioned in a sentence entered,
-        // if it is passed, print YES, if not, print NO
+        // Print the value of the larger of the two entered numbers on the screen;
+        // If two numbers are equal, print equally.
 
         Scanner input = new Scanner(System.in);
 
-        System.out.print("Enter a sentence: ");
-        String sentence = input.nextLine();
+        System.out.print("Number1= ");
+        int number1 = input.nextInt();
 
-        // Method 1
+        System.out.print("Number2= ");
+        int number2 = input.nextInt();
 
-        boolean isThere = sentence.contains("a");
+        if (number1 > number2) System.out.println("Number1 greater= " + number1);
 
-        if (isThere) System.out.println("YES");
+        if (number1 < number2) System.out.println("Number2 greater= " + number2);
 
-        if (!isThere) System.out.println("NO");
-
-        // Method 2
-
-        if (sentence.contains("a")) System.out.println("YES");
-
-        if (!sentence.contains("a")) System.out.println("NO");
-
-        // Method 3
-
-        boolean isThere2 = sentence.contains("a");
-
-        if (isThere2)     // isThere==true  isThere
-            System.out.println("YES");
-
-        if (!isThere2) System.out.println("NO");
-
-
-        // Method 4
-
-        if (sentence.contains("a")) System.out.println("YES");
-
-        if (!sentence.contains("a")) System.out.println("NO");
+        if (number1 == number2) System.out.println("Number1 and Number2 are equal");
     }
 }
-
-
-
-
-
-

@@ -3,9 +3,7 @@ package day17;
 import java.util.Scanner;
 
 public class _04_JavaSplitMethod {
-
     public static void main(String[] args) {
-
         // Kullanıcının gireceği bir cumlede kaç kelime olduğunu bulunuz
         // Bugun hava cok guzel -> 4
 

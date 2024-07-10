@@ -1,24 +1,18 @@
 package day12;
 
-import java.util.Scanner;
-
 public class _02_JavaRandom {
     public static void main(String[] args) {
 
-        // 1)- Try to guess by generating random numbers up to an entered number.
-        // 2)- If the user guesses the number correctly, "Congratulations!" print it.
-        // 3)- For example, if I enter 5, it will generate numbers up to 5, I will try to guess it.
+        // Math.Random() : Produces a double number. Produces from 0 to 0.9999999999.
+        // System.out.println(Math.random());
 
-        Scanner input = new Scanner(System.in);
-        System.out.print("Number limit to be produced :");
-        int limit = input.nextInt();
-
-        int numberKept = (int) (Math.random() * limit);
-
-        System.out.print("Your guess: ");
-        int guess = input.nextInt();
-
-        if (numberKept == guess) System.out.println("Congratulations you got it");
-        else System.out.println("You didn't know , " + numberKept);
+        int randomNumber = (int) (Math.random() * 25);
+        System.out.println("randomNumber = " + randomNumber);
     }
 }
+
+//        0 - 0,9999999999
+//
+//        Up to 10    -> 9 max
+//        Up to 100   -> 99 max
+//        Up to 25    -> 24 max

@@ -5,27 +5,25 @@ import java.util.Scanner;
 public class _01_IfElse {
     public static void main(String[] args) {
 
-        // If the length of a string is greater than 10 and the word "study" (upper or lower) is mentioned in the string,
-        // print yes on the screen, otherwise print no.
+        //  According to a student's grade entered,
+        //  if it is 50 and greater than 50, you pass,
+        //  if it is smaller, you fail.
 
         Scanner input = new Scanner(System.in);
-        System.out.print("Enter a sentence: ");
-        String sentence = input.nextLine();
+        System.out.print("Enter your grade:");
+        int studentGrade = input.nextInt();
 
-        // If the sentence is greater than 10 characters AND the word study is in it
-        // Write YES
-        // Not
-        // Write NO
+        // Method 1: The computer gets tired in vain
+        if (studentGrade >= 50) System.out.println("You've passed, congratulations!");
 
-        // Method 1
-        if (sentence.length() > 10 && sentence.toLowerCase().contains("study")) System.out.println("YES");
-        else System.out.println("NO");
+        if (studentGrade < 50) {
+            System.out.println("Sorry, you're stuck");
+            System.out.println("We are waiting for you to summer school");
+        }
 
-        // Method 2
-        int length = sentence.length();
-        boolean isThere = sentence.toLowerCase().contains("study");
-
-        if (length > 10 && isThere) System.out.println("YES");
-        else System.out.println("NO");
+        // Method 2: Should be
+        if (studentGrade >= 50) System.out.println("You've passed, congratulations!");
+        else // If the up is not a must
+            System.out.println("Sorry, you're stuck");
     }
 }

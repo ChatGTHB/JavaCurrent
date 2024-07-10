@@ -1,6 +1,6 @@
-package day11;
+package day12;
 
-public class _08_JavaMath {
+public class _01_JavaMath {
     public static void main(String[] args) {
 
         int a = 12;

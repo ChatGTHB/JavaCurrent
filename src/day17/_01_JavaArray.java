@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 public class _01_JavaArray {
     public static void main(String[] args) {
-
         // 50 kişilik bir sınıfın notlarını giriniz, ortalamadan büyük
         // kaç not olduğunu bulunuz ve bunları yazdırnız.
 

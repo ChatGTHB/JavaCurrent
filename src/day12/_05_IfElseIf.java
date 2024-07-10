@@ -2,7 +2,7 @@ package day12;
 
 import java.util.Scanner;
 
-public class _04_IfElseIf {
+public class _05_IfElseIf {
     public static void main(String[] args) {
 
         // Girilen 2 tam sayıyı kullanıcıdan aldıktan sonra,

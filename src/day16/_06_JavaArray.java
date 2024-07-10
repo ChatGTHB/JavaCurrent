@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 public class _06_JavaArray {
     public static void main(String[] args) {
-
         // Dizi nasıl okunur ve nasıl yazdırılır ?
 
         Scanner oku = new Scanner(System.in);

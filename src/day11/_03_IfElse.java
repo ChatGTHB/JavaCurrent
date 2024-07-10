@@ -1,8 +1,8 @@
-package day10;
+package day11;
 
 import java.util.Scanner;
 
-public class _09_IfElse {
+public class _03_IfElse {
     public static void main(String[] args) {
 
         // If the number entered is positive and an odd number,

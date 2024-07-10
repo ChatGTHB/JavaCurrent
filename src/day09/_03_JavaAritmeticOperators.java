@@ -2,25 +2,43 @@ package day09;
 
 public class _03_JavaAritmeticOperators {
     public static void main(String[] args) {
+        int total = 0, number = 1;
 
-        int a = 10;      // The value of a is 10
+        total = total + number;       // Add total number : 1 was total
+        number = number + 1;          // Increase Number by 1
 
-        a = 5;           // The value of a is 5
+        // It says you can write these 2 lines in one line
+        total = 0;
+        number = 1; // Brought to initial values
 
-        a = a + 6;       // Increase the value of a by 6 : 11
-        a += 6;          // The incremental value of a is 6 : 17
+        total = total + number++; // total =1, number =2
+        // ++ only affects the number
 
-        a = a + 1;       // Increase a by 1 : 18
-        a++;             // Increase a by 1 : 19
-        ++a;             // Increase a by 1 : 20
+        /*********************************************/
 
-        a = a - 5;       // a reduce 5 : 15
-        a -= 5;          // a reduce 5 : 10
+        total = 0;
+        number = 1; // Brought to initial values
 
-        a = a * 2;       // Multiply a by 2 : 20
-        a *= 2;          // The product value of a is 2 : 40;
+        number = number + 1;
+        total = total + number;         // number=2,  total=2
 
-        a = a / 5;       // Divide a by 5 : 8
-        a /= 2;          // quotient value of a 2 : 4
+        // Instead of these two lines, you can write in one line like this
+        total = 0;
+        number = 1; // Brought to initial values
+
+        total = total + ++number;   // number=2,  total=2
+
+        //  ++ then process, then increment
+        //  ++ If first, first increment, then operation
     }
 }
+
+
+
+
+
+
+
+
+
+

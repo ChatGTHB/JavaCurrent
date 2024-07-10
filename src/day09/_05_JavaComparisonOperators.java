@@ -1,8 +1,7 @@
 package day09;
 
-public class _04_JavaComparisonOperators {
+public class _05_JavaComparisonOperators {
     public static void main(String[] args) {
-
         int a = 50;
         int b = 50;
 

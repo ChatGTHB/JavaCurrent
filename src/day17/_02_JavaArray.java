@@ -3,7 +3,6 @@ package day17;
 public class _02_JavaArray {
 
     public static void main(String[] args) {
-
         int[] dizi = new int[5]; // 0,1,2,3,4 index li eleman haneleri olan int dizi
         int[] dizi2 = {3, 6, 56, 78, 98, 67, 89}; // 7 elemanlı dizi
         int[] dizi3 = {3, 6, 56, 78, 98, 67, 89}; // 7 elemanlı dizi
