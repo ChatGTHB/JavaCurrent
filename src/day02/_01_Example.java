@@ -1,9 +1,7 @@
 package day02;
 
 public class _01_Example {
-
     public static void main(String[] args) { // Start
-
         System.out.println("Friday");  // ln: go to the next line AFTER typing
         System.out.println("***************");
 

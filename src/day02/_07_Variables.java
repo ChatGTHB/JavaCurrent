@@ -1,9 +1,7 @@
 package day02;
 
 public class _07_Variables {
-
     public static void main(String[] args) {
-
         int side = 5; // int side, perimeter; I can declare multiple variables on the same line
 
         int perimeter = side + side + side + side;

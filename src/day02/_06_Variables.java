@@ -1,9 +1,7 @@
 package day02;
 
 public class _06_Variables {
-
     public static void main(String[] args) {
-
         int number; // I said allocate enough space to store an integer as much as an int, I called it number
 
         int Number; // number Number is completely different like a and z

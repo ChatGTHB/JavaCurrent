@@ -1,9 +1,7 @@
 package day01;
 
 public class _04_AddComment {
-
     public static void main(String[] args) { // The main section program starts working from here
-
         System.out.println("Hello World!"); // Print command to screen
 
         /*

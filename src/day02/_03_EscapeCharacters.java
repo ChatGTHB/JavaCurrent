@@ -1,9 +1,7 @@
 package day02;
 
 public class _03_EscapeCharacters {
-
     public static void main(String[] args) {
-
         /**
          Escape Characters
          \n   -> yeni satır aç, alt satıra geç

@@ -1,9 +1,7 @@
 package day02;
 
 public class _05_Variables {
-
     public static void main(String[] args) {
-
         /**
          1- Start
          2- Read number
