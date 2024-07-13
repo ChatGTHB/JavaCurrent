@@ -4,43 +4,42 @@ import java.util.Scanner;
 
 public class _02_Switch {
     public static void main(String[] args) {
+        // Print the name of the day corresponding to the day number entered by the user.
 
-        // Kullanıcının girdiği gün numarasına karşılık gelen günün adınız yazınız.
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Day number = ");
+        int dayNo = scan.nextInt();
 
-        Scanner oku = new Scanner(System.in);
-        System.out.print("Gün no=");
-        int gunNo = oku.nextInt();
-
-//        if ( gunNo==1)
-//            System.out.println("Pazartesi");
+//        if (dayNo == 1)
+//            System.out.println("Monday");
 //        else
-//            if (gunNo == 2)
-//                System.out.println("Salı");
+//            if (dayNo == 2)
+//                System.out.println("Tuesday");
 
-        switch (gunNo) {
+        switch (dayNo) {
             case 1:
-                System.out.println("Pazartesi");
+                System.out.println("Monday");
                 break;
             case 2:
-                System.out.println("Salı");
+                System.out.println("Tuesday");
                 break;
             case 3:
-                System.out.println("Çarşamba");
+                System.out.println("Wednesday");
                 break;
             case 4:
-                System.out.println("Perşembe");
+                System.out.println("Thursday");
                 break;
             case 5:
-                System.out.println("Cuma");
+                System.out.println("Friday");
                 break;
             case 6:
-                System.out.println("Cumartesi");
+                System.out.println("Saturday");
                 break;
             case 7:
-                System.out.println("Pazar");
+                System.out.println("Sunday");
                 break;
             default:
-                System.out.println("Hatalı giriş yaptınız");
+                System.out.println("Invalid input");
                 break;
         }
     }

@@ -2,19 +2,18 @@ package day13;
 
 public class _05_WhileLoop {
     public static void main(String[] args) {
+        // Print "hello" 5 times on the screen
+        // 1- counter = 0;
+        // 2- print "hello"
+        // 3- counter = counter + 1
+        // 4- if counter < 5 => go to step 2
 
-        // Ekrana 5 kez merhaba yazdırınız
-//      1- sayac=0;
-//      2- "merahaba" yaz
-//      3- sayac=sayac+1
-//      4- sayac < 5 => 2 ye git
+        int counter = 0;
 
-        int sayac = 0;
-
-        while (sayac < 5) {  // şart sağlandığı sürece DÖN
-            System.out.println("merhaba");
-            sayac = sayac + 1;   // sayac++;
+        while (counter < 5) {  // loop as long as the condition is true
+            System.out.println("hello");
+            counter = counter + 1;   // counter++;
         }
-        System.out.println("program bitti");
+        System.out.println("Program finished.");
     }
 }

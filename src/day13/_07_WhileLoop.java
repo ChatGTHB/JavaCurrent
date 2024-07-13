@@ -4,22 +4,19 @@ import java.util.Scanner;
 
 public class _07_WhileLoop {
     public static void main(String[] args) {
+        // Find the sum of only the positive numbers among the 6 numbers entered
+        Scanner scanner = new Scanner(System.in);
+        int counter = 0, sum = 0;
 
-        // Girilen 6 sayıdan sadece pozitif olanlarının
-        // toplamını bulunuz
+        while (counter < 6) {
+            System.out.print("Enter a number: ");
+            int number = scanner.nextInt();
 
-        Scanner oku = new Scanner(System.in);
-
-        int sayac = 0, toplam = 0;
-
-        while (sayac < 6) {
-            System.out.print("Sayi giriniz=");
-            int sayi = oku.nextInt();
-
-            if (sayi > 0) toplam = toplam + sayi;
-
-            sayac++;
+            if (number > 0) {
+                sum = sum + number;
+            }
+            counter++;
         }
-        System.out.println("toplam = " + toplam);
+        System.out.println("Sum = " + sum);
     }
 }

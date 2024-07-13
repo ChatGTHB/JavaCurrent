@@ -4,14 +4,13 @@ import java.util.Scanner;
 
 public class _04_Switch {
     public static void main(String[] args) {
+        // Print the number of days in the month corresponding to the entered month number.
 
-        // Girilen bir Ay numarasına göre ayın gün sayısını yazdırınız.
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Month number = ");
+        int monthNo = scanner.nextInt();
 
-        Scanner oku = new Scanner(System.in);
-        System.out.print("Ay no=");
-        int ayNo = oku.nextInt();
-
-        switch (ayNo) {
+        switch (monthNo) {
             case 1:
                 System.out.println(31);
                 break;
@@ -49,11 +48,11 @@ public class _04_Switch {
                 System.out.println(31);
                 break;
             default:
-                System.out.println("Hatalı Ay No");
+                System.out.println("Invalid Month Number");
         }
 
-        //2.Yol
-        switch (ayNo) {
+        // Alternative approach
+        switch (monthNo) {
             case 2:
                 System.out.println(28);
                 break;
@@ -76,7 +75,7 @@ public class _04_Switch {
                 break;
 
             default:
-                System.out.println("Hatalı Ay No");
+                System.out.println("Invalid Month Number");
         }
     }
 }
