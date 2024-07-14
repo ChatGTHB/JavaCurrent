@@ -1,21 +1,24 @@
 package day15;
 
-import java.util.Scanner;
-
 public class _01_ForLoop {
     public static void main(String[] args) {
+        // Print the numbers from 1 to 5 on the screen.
 
-        // Kullanıcının gireceği bir rakama(dahil) kadar
-        // olan sayıların toplamını bulunuz.
+        int counter = 1;
+        while (counter <= 5) {
+            System.out.println("counter while = " + counter);
+            counter++;
+        }
 
-        Scanner oku = new Scanner(System.in);
-        System.out.print("Kaça kadar toplanacak=");
-        int sinir = oku.nextInt();
+        // The creators of Java said
+        // if the start, end, and increment values of a loop are known,
+        // there is an easier way.
+        for (counter = 1; counter <= 5; counter++) // 65%
+            System.out.println("counter for = " + counter);
 
-        int toplam = 0;
-        // genelde sayac yerine i veya j kullanılır
-        for (int i = 1; i <= sinir; i++)
-            toplam = toplam + i;
-        System.out.println("toplam = " + toplam);
+        // Loop Rule:
+        // If the number of iterations of a loop is known: FOR
+        // If the number of iterations of a loop is NOT known: WHILE
+        // If the check is at the END of the loop: DO_WHILE
     }
 }

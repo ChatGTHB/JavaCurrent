@@ -1,28 +1,23 @@
 package day15;
 
+import java.util.Scanner;
+
 public class _02_ForLoop {
     public static void main(String[] args) {
+        // Print the sum of 5 entered integers
 
-        // 1 den 100 kadar olan çift sayıların toplamını bulunuz.
-        // aynı zaman da ,Toplam değeri 60 ı geçtiğinde
-        // 60 geçtiniz yazdırınız.
-        // 60 ı geçtiğinde döngü dursun
+        // What happens inside the loop?
+        // Read number, sum = sum + number
+        // Loop condition: counter <= 5
 
-        // Döngünün paramatreleri neler :
-        // başlangıç değer :2
-        // sınır değer 100
-        // artış değeri 2 şer
+        Scanner scanner = new Scanner(System.in);
+        int sum = 0;
 
-        int toplam = 0;
-        for (int i = 2; i < 100; i = i + 2) {
-            toplam = toplam + i;
-
-            if (toplam > 60) {
-                System.out.println("60 ı geçtiniz");
-                break; // break çalıştığında içindeki
-                // döngüyü kırar, bitirir
-            }
+        for (int counter = 1; counter <= 5; counter++) {
+            System.out.print("Enter number " + counter + ": ");
+            int number = scanner.nextInt();
+            sum = sum + number;
         }
-        System.out.println("toplam = " + toplam);
+        System.out.println("Sum = " + sum);
     }
 }

@@ -3,19 +3,19 @@ package day14;
 public class _01_WhileLoop {
     public static void main(String[] args) {
 
-        // 1 den 100 e kadar olan sayıların toplamını bulunuz
+        // Find the sum of numbers from 1 to 100
 
-        // Döngünün içinde neler olacak ?
-        // toplam=toplam+sayac
-        // sayac++
-        // döngü şartı sayac < 100
+        // What will happen inside the loop?
+        // sum = sum + counter
+        // counter++
+        // loop condition counter <= 100
 
-        int sayac = 1, toplam = 0;
+        int counter = 1, sum = 0;
 
-        while (sayac < 100) {
-            toplam = toplam + sayac;
-            sayac++;
+        while (counter <= 100) {
+            sum = sum + counter;
+            counter++;
         }
-        System.out.println("toplam = " + toplam);
+        System.out.println("Sum = " + sum);
     }
 }

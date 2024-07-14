@@ -4,24 +4,18 @@ import java.util.Scanner;
 
 public class _03_ForLoop {
     public static void main(String[] args) {
+        // Find the sum of numbers up to and including a number entered by the user.
 
-        // Girilen bir sayıya (dahil) kadar olan sayıların çarpımını bulunuz
-        // Bölüm 2 : carpimin sonucu 10000 i geçtiğinde işlem sonlansın.
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter the number up to which the sum is to be calculated: ");
+        int limit = scanner.nextInt();
 
-        Scanner oku=new Scanner(System.in);
-        System.out.print("sayi giriniz=");
-        int sinir=oku.nextInt();
-
-        int carpim=1;
-        for(int i=1; i <= sinir; i++)
-        {
-            carpim=carpim*i;  // 1*2*3*4*5...
-
-            if (carpim > 10000) {
-                System.out.println("break çalıştı");
-                break;
-            }
+        int sum = 0;
+        // Generally, i or j is used instead of counter
+        for (int i = 1; i <= limit; i++) {
+            sum = sum + i;
         }
-        System.out.println("carpim = " + carpim);
+        System.out.println("Sum = " + sum);
     }
 }
+

@@ -4,25 +4,26 @@ import java.util.Scanner;
 
 public class _04_DoWhile {
     public static void main(String[] args) {
+        // Write a program that keeps printing "Program is running" until the user enters 'x',
+        // and prints "Program finished" when 'x' is entered.
 
-        // Kullanıcıdan x girilene kadar ekrana "Program çalışıyor" yazan
-        // ve x girildiğinde ise "Program bitti" yazan programı yazınız.
+        // What happens inside the loop?
+        // Reading input, if it is different from 'x' then printing a message
+        // The loop will continue as long as the entered input is different from 'x'
 
-        // döngünün içerisinde neler olacak?
-        // okuma işlemi var, eğer x den farklı ise yazma işlemi var
-        // şart girilen x den farklı olduğu sürece dönecek
-
-        Scanner oku = new Scanner(System.in);
-        String girilen;
+        Scanner scanner = new Scanner(System.in);
+        String input;
 
         do {
-            System.out.print("ifade giriniz=");
-            girilen = oku.next();
+            System.out.print("Enter a phrase: ");
+            input = scanner.next();
 
-            if (!girilen.equalsIgnoreCase("x")) System.out.println("program çalışıyor");
+            if (!input.equalsIgnoreCase("x")) {
+                System.out.println("Program is running");
+            }
 
-        } while (!girilen.equalsIgnoreCase("x"));
+        } while (!input.equalsIgnoreCase("x"));
 
-        System.out.println("program bitti");
+        System.out.println("Program finished");
     }
 }

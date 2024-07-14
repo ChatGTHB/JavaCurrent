@@ -1,39 +1,37 @@
 package day15;
 
-public class _07_Example {
+public class _09_Example {
     public static void main(String[] args) {
+        // Previously, you created the multiplication table for 1.
+        // Now, create the multiplication tables up to 5.
 
-        // biraz önce çarpım tablosunda 1 leri yaptınız
-        // şimdi 5 lere kadar yapınız
-
-        //1.Yöntem
+        // Method 1
         for (int i = 1; i <= 10; i++)
-            System.out.println("1 x " + i + " =" + (i));
-
-        for (int i = 1; i <= 10; i++)
-            System.out.println("2 x " + i + " =" + (2 * i));
+            System.out.println("1 x " + i + " = " + i);
 
         for (int i = 1; i <= 10; i++)
-            System.out.println("3 x " + i + " =" + (3 * i));
+            System.out.println("2 x " + i + " = " + (2 * i));
 
         for (int i = 1; i <= 10; i++)
-            System.out.println("4 x " + i + " =" + (4 * i));
+            System.out.println("3 x " + i + " = " + (3 * i));
 
         for (int i = 1; i <= 10; i++)
-            System.out.println("5 x " + i + " =" + (5 * i));
+            System.out.println("4 x " + i + " = " + (4 * i));
+
+        for (int i = 1; i <= 10; i++)
+            System.out.println("5 x " + i + " = " + (5 * i));
 
         System.out.println("**************************");
-        //2.yöntem
-        for (int kacaKadar = 1; kacaKadar <= 5; kacaKadar++) {
 
+        // Method 2
+        for (int upTo = 1; upTo <= 5; upTo++) {
             for (int i = 1; i <= 10; i++)
-                System.out.println(kacaKadar + " x " + i + " =" + (kacaKadar * i));
+                System.out.println(upTo + " x " + i + " = " + (upTo * i));
 
             System.out.println();
         }
     }
 }
-
 
 //        1 x 1 = 1
 //        1 x 2 = 2

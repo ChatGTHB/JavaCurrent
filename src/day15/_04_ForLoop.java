@@ -2,21 +2,24 @@ package day15;
 
 public class _04_ForLoop {
     public static void main(String[] args) {
+        // Find the sum of even numbers from 1 to 100.
+        // Also, print "You have exceeded 60" when the sum exceeds 60.
+        // Stop the loop when the sum exceeds 60.
 
-        // 2 ler çarpım tablosunu , aşağıdaki şekilde
-        // olarak yazdırınız.
-        //    2 x 1 = 2
-        //    2 x 2 = 4
-        //    2 x 3 = 6
-        //    2 x 4 = 8
-        //    2 x 5 = 10
-        //    2 x 6 = 12
-        //    2 x 7 = 14
-        //    2 x 8 = 16
-        //    2 x 9 = 18
-        //    2 x 10 = 20
+        // Loop parameters:
+        // Start value: 2
+        // End value: 100
+        // Increment value: 2
 
-        for (int i = 1; i <= 10; i++)
-            System.out.println("2 x " + i + " = " + (2 * i));
+        int sum = 0;
+        for (int i = 2; i <= 100; i += 2) {
+            sum += i;
+
+            if (sum > 60) {
+                System.out.println("You have exceeded 60");
+                break; // break stops the loop when executed
+            }
+        }
+        System.out.println("Sum = " + sum);
     }
 }

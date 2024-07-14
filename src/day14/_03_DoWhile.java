@@ -4,42 +4,44 @@ import java.util.Scanner;
 
 public class _03_DoWhile {
     public static void main(String[] args) {
+        // Request numbers from the user until they enter 0,
+        // and sum the numbers. When 0 is entered, print the total sum.
 
-        // Kullanıcı 0 değeri girene kadar sayı isteyiniz ve sayıları
-        // toplayınız; 0 girdiğinde toplamı yazınız
+        // What happens inside the loop?
+        // Read number, sum = sum + number,
+        // Loop condition: number != 0
 
-        // döngünün içindekiler neler?
-        // sayı oku, toplam=toplam+sayi,
-        // döngünün şartı sayı!=0
+        Scanner scanner = new Scanner(System.in);
+        int sum = 0, number;
 
-        Scanner oku = new Scanner(System.in);
-        int toplam = 0, sayi;
+        System.out.print("Enter a number: ");
+        number = scanner.nextInt();
+        sum = sum + number;
 
-        System.out.print("Sayi giriniz=");
-        sayi = oku.nextInt();
-        toplam = toplam + sayi;
-
-        while (sayi != 0) {  // şartı kontrol et, sonra dön
-            System.out.print("Sayi giriniz=");
-            sayi = oku.nextInt();
-            toplam = toplam + sayi;
+        while (number != 0) {  // Check the condition, then loop
+            System.out.print("Enter a number: ");
+            number = scanner.nextInt();
+            sum = sum + number;
         }
-        System.out.println("toplam = " + toplam);
-        toplam = 0;
-        // kardeşi Do_While
-        // şartı kontrol etmeden 1 kez çalış, sonra kontrol ederk çalış
-        do {  // bu döngü şarta bağlı olmaksızı 1 kere çalışır,
-            System.out.print("2.döngü Sayi giriniz=");
-            sayi = oku.nextInt();
-            toplam = toplam + sayi;
-        } while (sayi != 0);
+        System.out.println("Sum = " + sum);
 
-        System.out.println("toplam = " + toplam);
+        // Reset sum for the do-while loop
+        sum = 0;
 
-        // While : önce kontrol sonra döngü
-        // do_while : önce 1 kez çalış , sonra kontrol, sonra döngü
+        // do-while loop
+        // Execute once without checking the condition, then loop if the condition is met
+        do {  // This loop runs once regardless of the condition
+            System.out.print("2nd loop - Enter a number: ");
+            number = scanner.nextInt();
+            sum = sum + number;
+        } while (number != 0);
 
-        // kontrol önce ise WHİLE
-        // kontrol sonda ise DO_WHİLE
+        System.out.println("Sum = " + sum);
+
+        // While: check the condition first, then loop
+        // Do-While: execute once, then check the condition, then loop
+
+        // If the check is first, use WHILE
+        // If the check is last, use DO_WHILE
     }
 }
