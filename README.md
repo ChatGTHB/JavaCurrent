@@ -1,23 +1,28 @@
 
 # JavaCurrent
 
-## Introduction
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
+![GitHub](https://img.shields.io/github/license/ChatGTHB/JavaCurrent?style=for-the-badge)
+![GitHub last commit](https://img.shields.io/github/last-commit/ChatGTHB/JavaCurrent?style=for-the-badge)
+
+## 💡 Introduction
 Welcome to the JavaCurrent repository! This project is designed to provide a comprehensive 42-day training program for learning core Java. Whether you are a beginner or looking to refresh your skills, this training will guide you through the fundamental concepts and advanced topics of Java programming.
 
 ## Table of Contents
-- [Introduction](#introduction)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Features](#features)
-- [Dependencies](#dependencies)
-- [Configuration](#configuration)
-- [Documentation](#documentation)
-- [Examples](#examples)
-- [Troubleshooting](#troubleshooting)
-- [Contributors](#contributors)
-- [License](#license)
+- [💡 Introduction](#💡-introduction)
+- [📥 Installation](#📥-installation)
+- [⚙️ Usage](#⚙️-usage)
+- [✨ Features](#✨-features)
+- [📦 Dependencies](#📦-dependencies)
+- [🔧 Configuration](#🔧-configuration)
+- [📚 Documentation](#📚-documentation)
+- [💡 Examples](#💡-examples)
+- [🛠️ Troubleshooting](#🛠️-troubleshooting)
+- [👥 Contributors](#👥-contributors)
+- [🤝 Contributing](#🤝-contributing)
+- [📜 License](#📜-license)
 
-## Installation
+## 📥 Installation
 To get started with JavaCurrent, clone the repository to your local machine using the following command:
 ```bash
 git clone https://github.com/ChatGTHB/JavaCurrent.git
@@ -30,29 +35,29 @@ Alternatively, you can open the project directly in IntelliJ IDEA from VCS:
 3. In the dialog that appears, enter the URL of the repository: `https://github.com/ChatGTHB/JavaCurrent.git`.
 4. Click `Clone`.
 
-## Usage
+## ⚙️ Usage
 Navigate to the project directory and open the project using your favorite IDE (such as IntelliJ IDEA or Eclipse). You can run the training modules by executing the provided Java files. Each module is designed to cover specific topics in Java, with detailed explanations and example code.
 
-## Features
+## ✨ Features
 - Comprehensive 42-day Java training program
 - Covers both basic and advanced Java concepts
 - Practical examples and exercises included
 - Structured curriculum for progressive learning
 
-## Dependencies
+## 📦 Dependencies
 - Java Development Kit (JDK) version 8 or higher
 - An IDE such as IntelliJ IDEA or Eclipse (recommended for better development experience)
 
-## Configuration
+## 🔧 Configuration
 No specific configuration is required. Simply clone the repository, open it in your IDE, and start learning!
 
-## Documentation
+## 📚 Documentation
 Detailed documentation for each training module is included within the repository. Refer to the README files in each module's directory for more information.
 
-## Examples
+## 💡 Examples
 Example code is provided within each module's directory. These examples are designed to illustrate the concepts covered in the training and help you understand how to apply them in real-world scenarios.
 
-## Troubleshooting
+## 🛠️ Troubleshooting
 If you encounter any issues while using the JavaCurrent repository, please check the following:
 - Ensure you have the correct version of JDK installed.
 - Verify that your IDE is properly configured for Java development.
@@ -60,8 +65,11 @@ If you encounter any issues while using the JavaCurrent repository, please check
 
 For further assistance, you can open an issue in the GitHub repository.
 
-## Contributors
+## 👥 Contributors
 - [ChatGTHB](https://github.com/ChatGTHB)
 
-## License
+## 🤝 Contributing
+Contributions are welcome! Please read the [CONTRIBUTING](CONTRIBUTING.md) file for guidelines on how to contribute to this project.
+
+## 📜 License
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
