@@ -2,21 +2,20 @@ package day16;
 
 public class _02_JavaNestedLoop {
     public static void main(String[] args) {
+        // Write a program that produces the following output using only one star:
+        // *        1st row has 1 star
+        // **       2nd row has 2 stars
+        // ***      3rd row has 3 stars
+        // ****     4th row has 4 stars
+        // *****    5th row has 5 stars
 
-        // Aşağıdaki görüntüyü veren programı yazınız(yanlızca 1 yıldız ile yapınız)
-        // *        1.Satırda 1 yıldız
-        // **       2.satırda 2 yıldız
-        // ***      3.satırda 3 yıldız
-        // ****     4.satırda 4 yıldız
-        // *****    5.satırda 5 yıldız
-
-
-        for (int j = 1; j <= 5; j++) {
-
-            //yukarıdaki döngü bu döngüyü 5 kez çalıştır
-            for (int i = 1; i <= j; i++) { // satır numarasına kadar, oda j
-                System.out.print("*"); //25 kez çalışır
+        // The outer loop runs 5 times, creating 5 rows
+        for (int row = 1; row <= 5; row++) {
+            // The inner loop runs 'row' times, printing the number of stars equal to the row number
+            for (int col = 1; col <= row; col++) {
+                System.out.print("*");// This will run 25 times
             }
+            // Move to the next line after printing the stars for the current row
             System.out.println();
         }
     }
