@@ -2,8 +2,7 @@
 # JavaCurrent
 
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
-![GitHub](https://img.shields.io/github/license/ChatGTHB/JavaCurrent?style=for-the-badge)
-![GitHub last commit](https://img.shields.io/github/last-commit/ChatGTHB/JavaCurrent?style=for-the-badge)
+![Platform](https://img.shields.io/badge/platform-JVM-blue?style=for-the-badge)
 
 ## 💡 Introduction
 Welcome to the JavaCurrent repository! This project is designed to provide a comprehensive 42-day training program for learning core Java. Whether you are a beginner or looking to refresh your skills, this training will guide you through the fundamental concepts and advanced topics of Java programming.
