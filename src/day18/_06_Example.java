@@ -1,26 +1,26 @@
 package day18;
 
 public class _06_Example {
-
     public static void main(String[] args) {
+        // Fill a 2x3 table with random numbers up to 100
+        // Print the table after filling it
 
-        // 2ye 3lük bir tabloyu random 100e kadar sayılarla doldurunuz
-        // bütün doldurma işlemi bittikten sonra yazdırınız
+        int[][] table = new int[2][3];  // 2x3 table
 
-        int[][] tablo = new int[2][3];  // 2ye 3lük bir tablo
-
-        //tabloyu random 100e kadar sayılarla doldurunuz
-        for (int i = 0; i < tablo.length; i++) {
-            for (int j = 0; j < tablo[i].length; j++) {
-                tablo[i][j] = (int) (Math.random() * 100);
+        // Fill the table with random numbers up to 100
+        for (int i = 0; i < table.length; i++) {
+            for (int j = 0; j < table[i].length; j++) {
+                table[i][j] = (int) (Math.random() * 100);
             }
         }
 
-        for (int satir = 0; satir < tablo.length; satir++) {
-            for (int sutun = 0; sutun < tablo[satir].length; sutun++) {
-                System.out.print(tablo[satir][sutun] + "\t");
+        // Print the filled table
+        for (int row = 0; row < table.length; row++) {
+            for (int column = 0; column < table[row].length; column++) {
+                System.out.print(table[row][column] + "\t");
             }
             System.out.println();
         }
     }
 }
+

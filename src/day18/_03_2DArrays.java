@@ -3,27 +3,27 @@ package day18;
 import java.util.Scanner;
 
 public class _03_2DArrays {
-
     public static void main(String[] args) {
+        // What is a 2D Array?
+        int number = 0;  // Holds one number
 
-        // 2 Boyutlu dizi (2D Arrays) nedir ?
-        int sayi = 0;  // 1 tane sayı tutar
+        int[] array = new int[10]; // Holds 10 numbers, like an apartment building
 
-        int[] dizi = new int[10]; // 10 tane sayı tutar, apartman
+        int[] course1Grades = new int[50];  // Holds 50 grades for course 1
+        int[] course2Grades = new int[50];  // Holds 50 grades for course 2
+        int[] course3Grades = new int[50];  // Holds 50 grades for course 3
 
-        int[] ders1Notlar = new int[50];  // ayrı ayrı 50
-        int[] ders2Notlar = new int[50];  // ayrı ayrı 50
-        int[] ders3Notlar = new int[50];  // ayrı ayrı 50
+        // How to define three arrays of 50 elements each in one go
+        int[][] allCourseGrades = new int[3][50];  // A 2D array: 3 arrays of 50 elements each
 
-        // 3 tane 50 yi tek kalemde tek değişkende nasıl tanımlarım
-        int[][] tumDersNotlar = new int[3][50];  // 3 tane 50, yukarıdaki ile aynı, site
+        //       [row][column]
+        allCourseGrades[0][0] = 80;  // Accessing the first element using two indices
 
-        //       [satır][sütun]
-        tumDersNotlar[0][0] = 80;  // 2 indexle eleman ulaşılır, bu ilk elemanı
+        System.out.println("allCourseGrades[0][0] = " + allCourseGrades[0][0]);
 
-        System.out.println("tumDersNotlar = " + tumDersNotlar[0][0]);
-
-        Scanner oku = new Scanner(System.in);
-        tumDersNotlar[0][0] = oku.nextInt();
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter a grade for the first student in the first course: ");
+        allCourseGrades[0][0] = scanner.nextInt();
+        System.out.println("Updated allCourseGrades[0][0] = " + allCourseGrades[0][0]);
     }
 }

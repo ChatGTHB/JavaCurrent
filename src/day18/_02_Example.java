@@ -3,28 +3,31 @@ package day18;
 import java.util.Arrays;
 
 public class _02_Example {
-
     public static void main(String[] args) {
+        // Fill an array of 10 elements with random numbers (including 10),
+        // then find out how many of them are odd and how many are even.
 
-        // 10 elemanlı bir diziyi random(10 dahil sayılarla) doldurduktan sonra,
-        // dizide kaç tek ve kaç çift olduğunu bulunuz
+        int[] array = new int[10];  // Define an array with 10 elements
 
-        int[] dizi = new int[10];
-
-        for (int i = 0; i < dizi.length; i++) {
-            dizi[i] = (int) (Math.random() * 11);
+        // Fill the array with random numbers from 0 to 10
+        for (int i = 0; i < array.length; i++) {
+            array[i] = (int) (Math.random() * 11);
         }
 
-        int tekMiktar = 0, ciftMiktar = 0;
+        int oddCount = 0, evenCount = 0;
 
-        for (int i = 0; i < dizi.length; i++) {
-            if (dizi[i] % 2 == 0) {
-                ciftMiktar++;    // ciftMiktar = ciftMiktar + 1;
-            } else tekMiktar++;  // tekMiktar = tekMiktar + 1;
+        // Count the number of odd and even numbers in the array
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] % 2 == 0) {
+                evenCount++;    // evenCount = evenCount + 1;
+            } else {
+                oddCount++;  // oddCount = oddCount + 1;
+            }
         }
 
-        System.out.println("dizi = " + Arrays.toString(dizi));
-        System.out.println("tekMiktar = " + tekMiktar);
-        System.out.println("ciftMiktar = " + ciftMiktar);
+        // Print the array and the counts
+        System.out.println("Array = " + Arrays.toString(array));
+        System.out.println("Number of odd elements = " + oddCount);
+        System.out.println("Number of even elements = " + evenCount);
     }
 }
