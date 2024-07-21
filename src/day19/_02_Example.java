@@ -5,35 +5,41 @@ import java.util.Scanner;
 
 public class _02_Example {
     public static void main(String[] args) {
+        // Fill a 2x3 table with random numbers up to 10.
+        // Then take a number from the user.
+        // If this number exists in the table, print its position (row, column).
 
-        // 2x3 lük bir tabloyu random 10 a kadar sayılarla doldurunuz.
-        // Daha sonra kullanıcıdan bir sayı alınız.
-        // Bu sayı tabloda var ise yerini (satir,sütun) yazdırınız.
+        int[][] table = new int[2][3];
 
-        int[][] tablo = new int[2][3];
-
-        //doldurma
-        for (int i = 0; i < tablo.length; i++) {
-
-            for (int j = 0; j < tablo[i].length; j++)
-                tablo[i][j] = (int) (Math.random() * 10);
+        // Fill the table with random numbers
+        for (int i = 0; i < table.length; i++) {
+            for (int j = 0; j < table[i].length; j++) {
+                table[i][j] = (int) (Math.random() * 10);
+            }
         }
-        // aranacak sayı kullanıcıdan alındı
-        Scanner oku = new Scanner(System.in);
-        System.out.print("Bir sayı giriniz: ");
-        int arananSayi = oku.nextInt();
 
-        // sayı tüm tablo elemanlarında arandı
-        for (int i = 0; i < tablo.length; i++) {
+        // Take the number to search from the user
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        int searchNumber = scanner.nextInt();
 
-            for (int j = 0; j < tablo[i].length; j++)
-                if (tablo[i][j] == arananSayi) {
-                    System.out.println("satir,sütun=" + i + "," + j);
+        // Search for the number in the table
+        boolean found = false;
+        for (int i = 0; i < table.length; i++) {
+            for (int j = 0; j < table[i].length; j++) {
+                if (table[i][j] == searchNumber) {
+                    System.out.println("Found at (row, column): (" + i + ", " + j + ")");
+                    found = true;
                 }
+            }
         }
 
-        //tablonun fotoğrafı yazıldı
-        System.out.println("0.Satır = " + Arrays.toString(tablo[0]));
-        System.out.println("1.Satır = " + Arrays.toString(tablo[1]));
+        if (!found) {
+            System.out.println("Number not found in the table.");
+        }
+
+        // Print the table
+        System.out.println("Row 0 = " + Arrays.toString(table[0]));
+        System.out.println("Row 1 = " + Arrays.toString(table[1]));
     }
 }
