@@ -4,47 +4,46 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class _03_Example {
-
     public static void main(String[] args) {
+        // Question of the Day: Fill a 3x2 array with numbers taken from the user.
+        // Then, assign only the odd elements to a one-dimensional array.
 
-        // Günün Sorusu :  3x2 lik bir diziyi kullanıcıdan sayı alarak doldurun
-        // Sonra sadece tek elemenlarını tek boyutlu bir diziye atayınız.
+        Scanner scanner = new Scanner(System.in);
+        int[][] table = new int[3][2]; // 3 rows, 2 columns
 
-        Scanner oku=new Scanner(System.in);
-        int[][] tablo=new int[3][2]; // 3 satır 2 sütun
-        // kullanıcıdan dolduralım bunu
+        // Fill the 2D array with user input and count the odd numbers
+        int oddCount = 0;
+        for (int i = 0; i < table.length; i++) {
+            for (int j = 0; j < table[i].length; j++) {
+                System.out.print("Enter a number: ");
+                table[i][j] = scanner.nextInt();
 
-        int tekMiktar=0;
-        for (int i = 0; i < tablo.length; i++) {
-
-            for (int j = 0; j < tablo[i].length; j++) {
-                System.out.print("Sayı giriniz=");
-                tablo[i][j]=oku.nextInt();
-
-                if ( tablo[i][j] % 2 == 1)
-                    tekMiktar++;
-            }
-
-        }
-
-        // tabloyu yazdıralım, bakalım
-        System.out.println("0.Satır = " + Arrays.toString(tablo[0]));
-        System.out.println("1.Satır = " + Arrays.toString(tablo[1]));
-        System.out.println("2.Satır = " + Arrays.toString(tablo[2]));
-
-        // içindeki tek sayıları
-        int[] tekler=new int[tekMiktar];  // buna doldurun
-
-        int teklerIndex=0;
-        for (int i = 0; i < tablo.length; i++) {
-
-            for (int j = 0; j < tablo[i].length; j++)
-                if ( tablo[i][j] % 2 == 1)
-                {
-                    tekler[teklerIndex]=tablo[i][j];
-                    teklerIndex++;
+                if (table[i][j] % 2 == 1) {
+                    oddCount++;
                 }
+            }
         }
-        System.out.println("tekler = " + Arrays.toString(tekler));
+
+        // Print the 2D array to verify its contents
+        System.out.println("Row 0 = " + Arrays.toString(table[0]));
+        System.out.println("Row 1 = " + Arrays.toString(table[1]));
+        System.out.println("Row 2 = " + Arrays.toString(table[2]));
+
+        // Create a 1D array to hold the odd numbers
+        int[] oddNumbers = new int[oddCount];
+
+        // Fill the 1D array with the odd numbers from the 2D array
+        int oddIndex = 0;
+        for (int i = 0; i < table.length; i++) {
+            for (int j = 0; j < table[i].length; j++) {
+                if (table[i][j] % 2 == 1) {
+                    oddNumbers[oddIndex] = table[i][j];
+                    oddIndex++;
+                }
+            }
+        }
+
+        // Print the 1D array of odd numbers
+        System.out.println("Odd numbers = " + Arrays.toString(oddNumbers));
     }
 }
