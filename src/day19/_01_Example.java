@@ -1,29 +1,29 @@
 package day19;
 
 public class _01_Example {
-
     public static void main(String[] args) {
+        // Fill a 2x5 table with random numbers up to 100.
+        // After filling the table, find out how many odd numbers it contains.
 
-        // 2 ye 5 lik bir tabloyu random 100 e kadar sayılarla doldurunuz
-        // bütün doldurma işlemi bittikten sonra
-        // kaç tane tek sayı olduğunu bulunuz.
+        int[][] table = new int[2][5];
 
-        int[][] tablo = new int[2][5];
-        // random sayılarla doldurma
-        for (int satir = 0; satir < tablo.length; satir++) {
-
-            for (int sutun = 0; sutun < tablo[satir].length; sutun++)
-                tablo[satir][sutun] = (int) (Math.random() * 100); //10 kez çalıştı
-
+        // Fill the table with random numbers
+        for (int row = 0; row < table.length; row++) {
+            for (int col = 0; col < table[row].length; col++) {
+                table[row][col] = (int) (Math.random() * 100); // Executes 10 times
+            }
         }
 
-        int tekMiktar = 0; // tek miktarını bulma
-        for (int satir = 0; satir < tablo.length; satir++) {
-
-            for (int sutun = 0; sutun < tablo[satir].length; sutun++)
-                if (tablo[satir][sutun] % 2 == 1) tekMiktar++;
+        int oddCount = 0; // Variable to count the number of odd numbers
+        // Count the odd numbers in the table
+        for (int row = 0; row < table.length; row++) {
+            for (int col = 0; col < table[row].length; col++) {
+                if (table[row][col] % 2 == 1) {
+                    oddCount++;
+                }
+            }
         }
 
-        System.out.println("tekMiktar = " + tekMiktar);
+        System.out.println("Number of odd numbers = " + oddCount);
     }
 }
