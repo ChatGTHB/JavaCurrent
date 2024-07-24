@@ -2,22 +2,21 @@ package day20;
 
 public class _04_JavaMethod {
     public static void main(String[] args) {
+        // Print if a number is odd or even.
+        int number = 55;
 
-        // bir sayının tek mi çift mi olduğunu yazdırınız.
-        int sayi = 55;
+        // Method 1
+        if (number % 2 == 0) System.out.println("Even");
+        else System.out.println("Odd");
 
-        // 1.Yöntem
-        if (sayi % 2 == 0) System.out.println("Çift");
-        else System.out.println("Tek");
-
-        //2.Yöntem
-        tekMiCiftMiYaz(60);
-        tekMiCiftMiYaz(55);
-        tekMiCiftMiYaz(46);
+        // Method 2
+        printOddOrEven(60);
+        printOddOrEven(55);
+        printOddOrEven(46);
     }
 
-    public static void tekMiCiftMiYaz(int sayi) {
-        if (sayi % 2 == 0) System.out.println(sayi + " : Çift");
-        else System.out.println(sayi + " : Tek");
+    public static void printOddOrEven(int number) {
+        if (number % 2 == 0) System.out.println(number + " : Even");
+        else System.out.println(number + " : Odd");
     }
 }

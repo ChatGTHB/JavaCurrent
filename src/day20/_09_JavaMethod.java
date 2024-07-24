@@ -4,25 +4,22 @@ import java.util.Scanner;
 
 public class _09_JavaMethod {
     public static void main(String[] args) {
+        // Find the larger of the two numbers entered by the user and print it in the main method.
+        Scanner scanner = new Scanner(System.in);
 
-        // Kullanıcının gireceği 2 sayıdan büyük olanını bulma işlemini bir metodda
-        // yaptıktan sonra main de yazdırınız.
+        System.out.print("Enter the 1st number: ");
+        int num1 = scanner.nextInt();
 
-        Scanner oku = new Scanner(System.in);
+        System.out.print("Enter the 2nd number: ");
+        int num2 = scanner.nextInt();
 
-        System.out.print("1.Sayı: ");
-        int sayi1 = oku.nextInt();
+        // int max = Math.max(num1, num2);
 
-        System.out.print("2.Sayı: ");
-        int sayi2 = oku.nextInt();
-
-        // int enb=Math.max(sayi1,sayi2);
-
-        int enb = enbBul(sayi1, sayi2); // veri alır, veri döndürür
-        System.out.println("enb = " + enb);
+        int max = findLargest(num1, num2); // takes input, returns a value
+        System.out.println("The largest number is: " + max);
     }
 
-    public static int enbBul(int s1, int s2) {
-        return (s1 > s2 ? s1 : s2);
+    public static int findLargest(int n1, int n2) {
+        return (n1 > n2 ? n1 : n2);
     }
 }

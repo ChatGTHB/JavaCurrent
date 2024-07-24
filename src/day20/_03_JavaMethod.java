@@ -1,27 +1,25 @@
 package day20;
 
 public class _03_JavaMethod {
-
     public static void main(String[] args) {
+        printHello();  // does not take any input and does not return any value
+        printHello();
 
-        merhabaYaz();  // veri almayan ve veri döndürmeyen
-        merhabaYaz();
-
-        merhabaYazIsme("ismet"); // veri alıyor fakat döndürmüyor
-        merhabaYazCok(5);     //veri alıyor fakat döndürmüyor
+        printHelloWithName("ismet"); // takes input but does not return any value
+        printHelloManyTimes(5);      // takes input but does not return any value
     }
 
-    public static void merhabaYaz() {
-        System.out.println("Merhaba Dünya");
+    public static void printHello() {
+        System.out.println("Hello World");
     }
 
-    public static void merhabaYazIsme(String ad) {
-        System.out.println("Merhaba " + ad);
+    public static void printHelloWithName(String name) {
+        System.out.println("Hello " + name);
     }
 
-    public static void merhabaYazCok(int miktar) { // başla
-        for (int i = 0; i < miktar; i++) {
-            System.out.println("Merhaba");
+    public static void printHelloManyTimes(int times) { // start
+        for (int i = 0; i < times; i++) {
+            System.out.println("Hello");
         }
-    }//dur
+    } // end
 }

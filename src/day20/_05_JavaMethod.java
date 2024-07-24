@@ -4,37 +4,27 @@ import java.util.Scanner;
 
 public class _05_JavaMethod {
     public static void main(String[] args) {
+        // Print the larger of the two entered numbers.
+        printLargest();  // This method will read and print
+        printLargest();
 
-        // girilen 2 sayıdan büyük olanını yazdırınız.
-
-        enBuyukYaz();  // hem okuyacak hem yazacak
-        enBuyukYaz();
-
-        enBuyukYaz(56, 70); // birden fazla parametre kullanımı
+        printLargest(56, 70); // Using multiple parameters
     }
 
-    public static void enBuyukYaz(int s1, int s2) {
-        if (s1 > s2) System.out.println(s1 + " büyük");
-        else if (s2 > s1) System.out.println(s2 + " büyük");
-        else System.out.println("eşit");
+    public static void printLargest(int num1, int num2) {
+        if (num1 > num2) System.out.println(num1 + " is larger");
+        else if (num2 > num1) System.out.println(num2 + " is larger");
+        else System.out.println("Both numbers are equal");
     }
 
+    public static void printLargest() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter the 1st number: ");
+        int num1 = scanner.nextInt();
+        System.out.print("Enter the 2nd number: ");
+        int num2 = scanner.nextInt();
 
-    public static void enBuyukYaz() {
-        Scanner oku = new Scanner(System.in);
-        System.out.print("1.Sayı giriniz: ");
-        int s1 = oku.nextInt();
-        System.out.print("2.Sayı giriniz: ");
-        int s2 = oku.nextInt();
-
-//        if (s1>s2)
-//            System.out.println(s1+ " büyük");
-//        else
-//            if (s2>s1)
-//                System.out.println(s2+ " büyük");
-//            else
-//                System.out.println("eşit");
-
-        enBuyukYaz(s1, s2);
+        // Call the overloaded method to print the largest number
+        printLargest(num1, num2);
     }
 }

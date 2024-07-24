@@ -5,44 +5,43 @@ import java.util.Scanner;
 
 public class _07_JavaMethod {
     public static void main(String[] args) {
+        // After filling a 5-element array with the user in the main method,
+        // find and print the smallest and largest elements of the array
+        // and its average in separate functions.
 
-        // Kullanıcı ile 5 elemanlı bir diziyi mainde doldurduktan sonra,
-        // dizinin en küçük ve en büyük elemanı ile
-        // ortalamasını ayrı fonksiyonlarda bulup yazdırınız
+        Scanner scanner = new Scanner(System.in);
+        int[] array = new int[5];
 
-        Scanner oku = new Scanner(System.in);
-        int[] dizi = new int[5];
-
-        for (int i = 0; i < dizi.length; i++) {
-            System.out.print("Sayı giriniz: ");
-            dizi[i] = oku.nextInt();
+        for (int i = 0; i < array.length; i++) {
+            System.out.print("Enter a number: ");
+            array[i] = scanner.nextInt();
         }
 
-        System.out.println(Arrays.toString(dizi));
+        System.out.println(Arrays.toString(array));
 
-        enBuyukYaz(dizi);
-        enKucukYaz(dizi);
-        ortalamaYaz(dizi);
+        printLargest(array);
+        printSmallest(array);
+        printAverage(array);
     }
 
-    public static void enBuyukYaz(int[] dizi) {
-        Arrays.sort(dizi);
-        System.out.println("En büyük= " + dizi[dizi.length - 1]);
+    public static void printLargest(int[] array) {
+        Arrays.sort(array);
+        System.out.println("Largest= " + array[array.length - 1]);
     }
 
-    public static void enKucukYaz(int[] dizi) {
-        Arrays.sort(dizi);
-        System.out.println("En küçük= " + dizi[0]);
+    public static void printSmallest(int[] array) {
+        Arrays.sort(array);
+        System.out.println("Smallest= " + array[0]);
     }
 
-    public static void ortalamaYaz(int[] dizi) {
+    public static void printAverage(int[] array) {
+        int sum = 0;
+        for (int i = 0; i < array.length; i++) {
+            sum += array[i];
+        }
 
-        int toplam = 0;
-        for (int i = 0; i < dizi.length; i++)
-            toplam = toplam + dizi[i];
+        double average = (double) sum / array.length;
 
-        int ort = toplam / dizi.length;
-
-        System.out.println("ort = " + ort);
+        System.out.println("Average= " + average);
     }
 }
