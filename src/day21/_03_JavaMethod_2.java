@@ -1,31 +1,30 @@
 package day21;
 
 public class _03_JavaMethod_2 {
-
     public static void main(String[] args) {
-        int s1 = 4;
-        int s2 = 12;
-        int s3 = 12;
-        int s4 = 12;
+        int n1 = 4;
+        int n2 = 12;
+        int n3 = 12;
+        int n4 = 12;
 
-        int sonuc1 = toplamBul(s1, s2);
-        int sonuc2 = toplamBul(s1, s2, s3);
-        int sonuc3 = toplamBul(s1, s2, s3, s4);
-        int sonuc4 = toplamBul(s1, s2, s3, s4, 67);
-        System.out.println("sonuc1 = " + sonuc1);
-        System.out.println("sonuc2 = " + sonuc2);
-        System.out.println("sonuc3 = " + sonuc3);
-        System.out.println("sonuc4 = " + sonuc4);
+        int result1 = findSum(n1, n2);
+        int result2 = findSum(n1, n2, n3);
+        int result3 = findSum(n1, n2, n3, n4);
+        int result4 = findSum(n1, n2, n3, n4, 67);
+
+        System.out.println("result1 = " + result1);
+        System.out.println("result2 = " + result2);
+        System.out.println("result3 = " + result3);
+        System.out.println("result4 = " + result4);
     }
 
-    // Kaç tane gelirse gelsin, hepsini diziye atıp işleme alınabilir
-    public static int toplamBul(int... dizi) {
-        int toplam = 0;
+    // No matter how many numbers are provided, they can all be processed in an array
+    public static int findSum(int... numbers) {
+        int sum = 0;
 
-        for (int i = 0; i < dizi.length; i++)
-            toplam = toplam + dizi[i];
+        for (int i = 0; i < numbers.length; i++)
+            sum = sum + numbers[i];
 
-        return toplam;
+        return sum;
     }
-
 }
