@@ -4,27 +4,26 @@ import java.util.Scanner;
 
 public class _01_JavaMethod {
     public static void main(String[] args) {
-
         /**
-         Kullanıcının gireceği bir sayıya kadar olan sayıların toplamını
-         bir fonksiyonda buldurup mainden yazdırınız
-         5 -> 1+2+3+4+5
+         * Find the sum of numbers up to a number entered by the user
+         * in a function and print it from the main method.
+         * For example, 5 -> 1+2+3+4+5
          */
 
-        Scanner oku = new Scanner(System.in);
-        System.out.print("Bir sayı giriniz: ");
-        int sayi = oku.nextInt();
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        int number = scanner.nextInt();
 
-        int toplam = toplamBul(sayi); // Math.Max(4,5);
+        int sum = findSum(number); // Math.max(4, 5);
 
-        System.out.println("toplam = " + toplam);
+        System.out.println("Sum = " + sum);
     }
 
-    public static int toplamBul(int sayi) {
-        int toplam = 0;
-        for (int i = 1; i <= sayi; i++) {
-            toplam = toplam + i;
+    public static int findSum(int number) {
+        int sum = 0;
+        for (int i = 1; i <= number; i++) {
+            sum = sum + i;
         }
-        return toplam;
+        return sum;
     }
 }
