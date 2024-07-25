@@ -4,46 +4,43 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class _06_ArrayList_Example {
-
     public static void main(String[] args) {
-
         /**
-         Bir öğretmenden girmek istediği kadar notu alınız,
-         Öğretmene devam etmek istiyor musunuz (E/H) şeklinde sorunuz
-         ve ortalamayı geçen öğrenci sayısını bulunuz.
+         * Take as many grades as the teacher wants to enter.
+         * Ask the teacher if they want to continue (Y/N).
+         * Find the number of students who passed the average.
          */
 
-        Scanner okuInt = new Scanner(System.in);
-        Scanner okuStr = new Scanner(System.in);
+        Scanner scannerInt = new Scanner(System.in);
+        Scanner scannerStr = new Scanner(System.in);
 
-        ArrayList<Integer> notlar = new ArrayList<>();
-        int toplam = 0;
-        String cevap = "";
+        ArrayList<Integer> grades = new ArrayList<>();
+        int total = 0;
+        String response = "";
         do {
-            //notu oku
-            System.out.print("Not giriniz=");
-            int not = okuInt.nextInt();
+            // Read the grade
+            System.out.print("Enter grade: ");
+            int grade = scannerInt.nextInt();
 
-            //ArrayList e ekle
-            notlar.add(not);
-            toplam = toplam + not;
+            // Add to the ArrayList
+            grades.add(grade);
+            total += grade;
 
-            System.out.print("Devam etmek istiyor musunuz?(E/H)=");
-            //Cevabı al döngü şartı olarak kullan
-            cevap = okuStr.next();
+            System.out.print("Do you want to continue? (Y/N): ");
+            // Read the response and use it as the loop condition
+            response = scannerStr.next();
 
-        } while (cevap.equalsIgnoreCase("E")); // evet olduğu sürece dön
+        } while (response.equalsIgnoreCase("Y")); // continue as long as the answer is yes
 
-        System.out.println("notlar = " + notlar);
+        System.out.println("grades = " + grades);
 
-        int ort = toplam / notlar.size();
-        System.out.println("ort = " + ort);
+        int average = total / grades.size();
+        System.out.println("average = " + average);
 
-        int gecenSayisi = 0;
-        for (int i = 0; i < notlar.size(); i++) {
-            if (notlar.get(i) >= ort) gecenSayisi++;
+        int passingCount = 0;
+        for (int i = 0; i < grades.size(); i++) {
+            if (grades.get(i) >= average) passingCount++;
         }
-
-        System.out.println("gecenSayisi = " + gecenSayisi);
+        System.out.println("passingCount = " + passingCount);
     }
 }

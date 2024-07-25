@@ -5,38 +5,33 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class _05_ArrayList_Example {
-
     public static void main(String[] args) {
-
         /**
-         Kullanıcıdan alacağınız 6 elemanlı(sayı) bir dizinin
-         sadece tek sayı olan elemanlarını ayrı diziye(liste)(ArrayList) atayarak
-         yazdırınız.
+         * Take a 6-element array (numbers) from the user and
+         * store only the odd numbers in a separate list (ArrayList) and print them.
          */
 
-        Scanner oku = new Scanner(System.in);
-        int[] dizi = new int[6];
+        Scanner scanner = new Scanner(System.in);
+        int[] array = new int[6];
 
-        for (int i = 0; i < dizi.length; i++) {
-            System.out.print("Sayı=");
-            dizi[i] = oku.nextInt();
+        for (int i = 0; i < array.length; i++) {
+            System.out.print("Number = ");
+            array[i] = scanner.nextInt();
         }
 
-        System.out.println("dizi = " + Arrays.toString(dizi));
+        System.out.println("array = " + Arrays.toString(array));
 
-        ArrayList<Integer> tekler = new ArrayList<>();
+        ArrayList<Integer> oddNumbers = new ArrayList<>();
 
-        for (int i = 0; i < dizi.length; i++) {
-
-            if (dizi[i] % 2 == 1) tekler.add(dizi[i]);
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] % 2 == 1) oddNumbers.add(array[i]);
         }
 
-        //1.yol fotoğraf
-        System.out.println("tekler = " + tekler);
+        // 1st way: print the list directly
+        System.out.println("oddNumbers = " + oddNumbers);
 
-        //2.yol tek tek elemanları
-        for (int i = 0; i < tekler.size(); i++)
-            System.out.print(tekler.get(i) + "\t");
-
+        // 2nd way: print each element separately
+        for (int i = 0; i < oddNumbers.size(); i++)
+            System.out.print(oddNumbers.get(i) + "\t");
     }
 }

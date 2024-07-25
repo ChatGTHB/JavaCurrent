@@ -3,52 +3,49 @@ package day21;
 import java.util.ArrayList;
 
 public class _04_ArrayList {
-
     public static void main(String[] args) {
+        int number = 5;            // Memory area that can hold one number and is named 'number'
+        int[] array = new int[5];  // Memory area that can hold 5 numbers and is named 'array' (apartment)
+        // It always has a fixed length of 5, even if you only use 3 of them, 2 remain unused
 
-        int sayi = 5;             // 1 tane sayı tutabilen ve ismi sayi olan hafıza bölgesi
-        int[] dizi = new int[5];  // 5 tane sayı tutabilen ve ismi dizi olan hafıza bölgesi (apartman)
-        // 5 tane 5 kalıyor, 3 tane kullansan 2 tanesi atıl kalıyor, uzunluk hep sabit
-        // ARRAY
+        // Instead of an array, what if there was something that had no initial length,
+        // that could grow as I add elements and shrink as I remove them, like a shopping list, flexible in size
+        // Array's cousin: LIST form of ARRAY
 
-        // dizinin yerine şöyle bir şey olsa, uzunluğu başta hiç olmasa, ben ekledikçe artsa
-        // sildikçe azalsa , yani alışveriş listesi gibi, boyutu esnek olsun
-        // dizini kuzeni : ARRAY in LİST hali
-
-        ArrayList<Integer> list = new ArrayList<>(); // ekledikçe uzayacak, sildikçe kısalacak
+        ArrayList<Integer> list = new ArrayList<>(); // will grow as you add elements, shrink as you remove them
         ArrayList<String> stringList = new ArrayList<>();
         ArrayList<Double> doubleList = new ArrayList<>();
 
-        ArrayList<String> isimler = new ArrayList<>();
-        System.out.println("isimler = " + isimler);// direkt fotoğraf
+        ArrayList<String> names = new ArrayList<>();
+        System.out.println("names = " + names); // directly print the list
 
-        isimler.add("Burak"); // eleman ekleme
-        isimler.add("Aslı");
-        isimler.add("Selda");
-        isimler.add("Serkan");
+        names.add("Burak"); // add elements
+        names.add("Aslı");
+        names.add("Selda");
+        names.add("Serkan");
 
-        System.out.println("isimler = " + isimler);
-        System.out.println("isimler.size() = " + isimler.size());
+        System.out.println("names = " + names);
+        System.out.println("names.size() = " + names.size());
 
-        isimler.add(1, "Mertcan"); // araya ekleme, diğerleri bir üste kayar
-        System.out.println("isimler = " + isimler);
+        names.add(1, "Mertcan"); // add in between, others shift up
+        System.out.println("names = " + names);
 
-        isimler.set(2, "Ulvi");  // verilen indexdeli, elemanı değiştirmek
-        System.out.println("isimler = " + isimler);
+        names.set(2, "Ulvi");  // replace element at the given index
+        System.out.println("names = " + names);
 
-        boolean varMi = isimler.contains("Burak");
-        System.out.println("varMi = " + varMi);
+        boolean isThere = names.contains("Burak");
+        System.out.println("isThere = " + isThere);
 
-        isimler.remove(1); // rakam verildiğinde index olarak görür ve siler
-        System.out.println("isimler = " + isimler);
+        names.remove(1); // if given a number, it is treated as an index and removes the element
+        System.out.println("names = " + names);
 
-        int indexOfSelda = isimler.indexOf("Selda"); // verilenin indexi ni gönderir
+        int indexOfSelda = names.indexOf("Selda"); // returns the index of the given element
         System.out.println("indexOfSelda = " + indexOfSelda);
 
-        String ilkEleman = isimler.get(0); // verilen indexdeki elemanı verir
-        System.out.println("ilkEleman = " + ilkEleman);
+        String firstElement = names.get(0); // returns the element at the given index
+        System.out.println("firstElement = " + firstElement);
 
-        isimler.clear(); // Listi temizler
-        System.out.println("isimler = " + isimler);
+        names.clear(); // clears the list
+        System.out.println("names = " + names);
     }
 }
