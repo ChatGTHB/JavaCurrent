@@ -4,49 +4,44 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class _03_Example {
-
     public static void main(String[] args) {
+        // A live dictionary is to be made,
+        // Get as much information as the user wants in the form of word and meaning
+        // Get 2 pieces of information.
+        // Then get a word from the user and print its meaning.
 
-        // Bir canlı sözlük yapılmak isteniyor,
-        // Kullanıcıdan kelime ve manası şeklinde
-        // Devam ietmek istediği kadar bilgi alınız
-        // 2 bilgi alınız.
-        // Daha sonra kullanıcıdan bir kelime alarak
-        // manasını yazdırınız.
+        // Words in one place, meanings in another
+        ArrayList<String> words = new ArrayList<>();
+        ArrayList<String> meanings = new ArrayList<>();
 
-        // kelimeler bi yerde , anlamları bi yerde olacak
-        ArrayList<String> kelimeler = new ArrayList<>();
-        ArrayList<String> manalari = new ArrayList<>();
+        ArrayList<ArrayList<String>> dictionary = new ArrayList<>();
+        dictionary.add(words);
+        dictionary.add(meanings);
 
-        ArrayList<ArrayList<String>> sozluk = new ArrayList<>();
-        sozluk.add(kelimeler);
-        sozluk.add(manalari);
+        Scanner scanner = new Scanner(System.in);
 
-        Scanner okuStr = new Scanner(System.in);
-
-        String cevap = "";
+        String answer = "";
         do {
-            System.out.print("Kelime giriniz=");
-            String kelime = okuStr.nextLine();
-            kelimeler.add(kelime);  //sozluk.get(0).add(kelime);
+            System.out.print("Enter a word: ");
+            String word = scanner.nextLine();
+            words.add(word);  // dictionary.get(0).add(word);
 
-            System.out.print("Manasını giriniz=");
-            String mana = okuStr.nextLine();
-            manalari.add(mana); //sozluk.get(1).add(kelime);
+            System.out.print("Enter its meaning: ");
+            String meaning = scanner.nextLine();
+            meanings.add(meaning); // dictionary.get(1).add(meaning);
 
-            System.out.print("Devam etmek istiyor musunuz?(E/H)=");
-            cevap = okuStr.nextLine();
+            System.out.print("Do you want to continue? (Y/N): ");
+            answer = scanner.nextLine();
 
-        } while (cevap.equalsIgnoreCase("E"));
+        } while (answer.equalsIgnoreCase("Y"));
 
-        System.out.print("Aranacak Kelime=");
-        String arananKelime = okuStr.nextLine();
+        System.out.print("Enter the word to search: ");
+        String searchWord = scanner.nextLine();
 
-        // şimdi arana kelimeyi bulalım
-        for (int i = 0; i < kelimeler.size(); i++) {  // sozluk.get(0).size()
-            if (kelimeler.get(i).equalsIgnoreCase(arananKelime)) //kelime bulundu
-            {
-                System.out.println(manalari.get(i));
+        // Now let's find the search word
+        for (int i = 0; i < words.size(); i++) {  // dictionary.get(0).size()
+            if (words.get(i).equalsIgnoreCase(searchWord)) { // word found
+                System.out.println(meanings.get(i));
             }
         }
     }
