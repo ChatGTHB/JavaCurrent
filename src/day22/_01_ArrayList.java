@@ -5,62 +5,54 @@ import java.util.Arrays;
 import java.util.Collections;
 
 public class _01_ArrayList {
-
     public static void main(String[] args) {
+        // ArrayList is a member of the Collection group
+        // Just like we use Arrays.sort to sort arrays,
+        // we will use Collection methods to handle ArrayLists.
 
-        // ArrayList Collection grubunun bir elemanı
-        // Array i sıralarken Arrays.sort u kullandığımız gibi,
-        // ArrayList i Collection metodlarını kullanacağız.
+        ArrayList<Integer> numbers = new ArrayList<>();
+        numbers.add(50);
+        numbers.add(5);
+        numbers.add(456);
+        numbers.add(45);
+        numbers.add(3);
 
-        ArrayList<Integer> sayilar = new ArrayList<>();
-        sayilar.add(50);
-        sayilar.add(5);
-        sayilar.add(456);
-        sayilar.add(45);
-        sayilar.add(3);
+        System.out.println("numbers = " + numbers);
 
-        System.out.println("sayilar = " + sayilar);
+        // Sorting
+        Collections.sort(numbers);
+        System.out.println("numbers = " + numbers);
 
-        //Sıralama işlemi
-        Collections.sort(sayilar);
-        System.out.println("sayilar = " + sayilar);
+        // Reversing
+        Collections.reverse(numbers);
+        System.out.println("numbers = " + numbers);
 
-        //Tersine çevirme
-        Collections.reverse(sayilar);
-        System.out.println("sayilar = " + sayilar);
+        // Max and Min
+        System.out.println("max() = " + Collections.max(numbers));
+        System.out.println("min() = " + Collections.min(numbers));
 
-        //Max ve Min
-        System.out.println("max() = " + Collections.max(sayilar));
-        System.out.println("min() = " + Collections.min(sayilar));
+        // Filling all elements with a value
+        Collections.fill(numbers, 0); // set all elements to 0
+        System.out.println("numbers = " + numbers);
 
-        //bir değer ile bütün elemanları doldurma
-        Collections.fill(sayilar, 0); // 0 değerini bütün elemanlara ver
-        System.out.println("sayilar = " + sayilar);
+        // Replacing a specific value with another value
+        Collections.replaceAll(numbers, 0, 5);
+        System.out.println("numbers = " + numbers);
 
-        //istenen elemanı, istenen değerle değiştirme
-        Collections.replaceAll(sayilar, 0, 5);
-        System.out.println("sayilar = " + sayilar);
+        // Assigning values during initialization
+        ArrayList<Integer> list = new ArrayList<>(Arrays.asList(3, 45, 6, 7, 8));
+        System.out.println("list = " + list);
 
-        //tanımlarken değer atama
-        ArrayList<Integer> liste = new ArrayList<>(Arrays.asList(3, 45, 6, 7, 8));
-        System.out.println("liste = " + liste);
+        ArrayList<String> list2 = new ArrayList<>(Arrays.asList("ismet", "mehmet", "Ayşe"));
+        System.out.println("list2 = " + list2);
 
-        ArrayList<String> liste2 = new ArrayList<>(Arrays.asList("ismet", "mehmet", "Ayşe"));
-        System.out.println("liste2 = " + liste2);
+        // Adding multiple elements to a list
+        Collections.addAll(list, 3, 4, 5, 6, 7);
+        System.out.println("list = " + list);
 
-        // Bir liste çoklu eleman ekleme
-        Collections.addAll(liste, 3, 4, 5, 6, 7);
-        System.out.println("liste = " + liste);
-
-        // diziyi liste atmak istersek
-        Integer[] dizi2 = {2, 3, 4, 5};
-        ArrayList<Integer> liste4 = new ArrayList<>(Arrays.asList(dizi2));
-        System.out.println("liste4 = " + liste4);
+        // If you want to convert an array to a list
+        Integer[] array2 = {2, 3, 4, 5};
+        ArrayList<Integer> list4 = new ArrayList<>(Arrays.asList(array2));
+        System.out.println("list4 = " + list4);
     }
 }
-
-
-
-
-
-
