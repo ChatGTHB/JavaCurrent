@@ -1,22 +1,47 @@
-Array : int[]
-index var : dizi[i] gibi
-ELEMAN TEKRARI olabilir
-fori (sıra garanti, çünkü index göre çalışıyor)
-foreach (evet, sıra garanti değil)
-boyut sabit
 
-ArrayList
-index var : get(i) gibi
-ELEMAN TEKRARI olabilir
-fori(sıra garanti, çünkü indexe göre çalışıyor)
-foreach (evet, sıra garanti değil)
-boyut sabit değil, değişken
+### Java Data Structures Comparison
 
-SET lerde
-index yok
-fori  yok
-ELEMAN TEKRARI YOK
-boyut sabit değil, değişken
-foreach (evet, sıra garanti değil)
-sıra garanti istiyorsan (ITERATOR - ittirgeç)
+#### Array
+- **Index**: Yes (e.g., `array[i]`)
+- **Element Duplication**: Yes (elements can be repeated)
+- **For Loop (fori)**: Yes (order is guaranteed because it works with index)
+- **For-Each Loop**: Yes (order is guaranteed)
+- **Fixed Size**: Yes (size is fixed upon initialization)
 
+#### ArrayList
+- **Index**: Yes (e.g., `list.get(i)`)
+- **Element Duplication**: Yes (elements can be repeated)
+- **For Loop (fori)**: Yes (order is guaranteed because it works with index)
+- **For-Each Loop**: Yes (order is not guaranteed)
+- **Fixed Size**: No (size can change dynamically)
+
+#### Set
+- **Index**: No (e.g., `set[i]` is not possible)
+- **For Loop (fori)**: No (traditional for loop is not applicable)
+- **Element Duplication**: No (elements cannot be repeated)
+- **Fixed Size**: No (size can change dynamically)
+- **For-Each Loop**: Yes (order is not guaranteed)
+- **Order Guarantee**: Use **Iterator** if order is required
+
+### Summary Points
+
+1. **Array**:
+   - Use when you need a fixed-size collection of elements.
+   - Can contain duplicate elements.
+   - Order is maintained, and you can access elements by index.
+   - For loop (`fori`) and for-each loop are both applicable.
+
+2. **ArrayList**:
+   - Use when you need a dynamically sized collection of elements.
+   - Can contain duplicate elements.
+   - Order is maintained, and you can access elements by index.
+   - For loop (`fori`) and for-each loop are both applicable.
+   - Size can change (grow or shrink) as elements are added or removed.
+
+3. **Set**:
+   - Use when you need a collection of unique elements.
+   - Cannot contain duplicate elements.
+   - No index-based access (for loop (`fori`) is not applicable).
+   - For-each loop is applicable, but order is not guaranteed.
+   - Size can change dynamically.
+   - Use **Iterator** if you need to ensure the order of elements.

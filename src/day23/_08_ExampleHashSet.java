@@ -3,21 +3,20 @@ package day23;
 import java.util.HashSet;
 
 public class _08_ExampleHashSet {
-
     public static void main(String[] args) {
-
         /**
-         * 1den 20ye kadar (20 dahil) olan sayılardan random olarak
-         * tekrar olmayacak şekilde 10 tanesini bir diziye atayınız.
-         * Yani 10 tane random sayı istiyoruz ama içinde tekrar olmayacak.
+         * Generate an array of 10 unique random numbers between 1 and 20 (inclusive).
+         * We want 10 random numbers without any duplicates.
          */
 
-        HashSet<Integer> sayilar = new HashSet<>();
+        HashSet<Integer> numbers = new HashSet<>();
 
-        while (sayilar.size() < 10) { //10 olduğunda duracak
-            int randomSayi = (int) (Math.random() * 20) + 1;
-            sayilar.add(randomSayi);
+        while (numbers.size() < 10) { // Stops when the set contains 10 elements
+            int randomNum = (int) (Math.random() * 20) + 1;
+            numbers.add(randomNum); // Adds the number if it's not already in the set
         }
-        System.out.println("sayilar = " + sayilar);
+
+        // Print the set of unique random numbers
+        System.out.println("numbers = " + numbers);
     }
 }
