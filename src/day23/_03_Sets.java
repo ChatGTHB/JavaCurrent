@@ -6,37 +6,42 @@ import java.util.TreeSet;
 
 public class _03_Sets {
     public static void main(String[] args) {
+        // SETS: Collections that do not allow duplicate elements.
+        // HashSet: Used for fast insertion and retrieval of elements without any guarantee of order.
+        // LinkedHashSet: Maintains the insertion order of elements.
+        // TreeSet: Keeps elements sorted according to their natural order or a specified comparator.
 
-        // SETS          : TEKRAR YOK
-        // HashSet       : HIZLI, bunun için içidekileri kendi mantığına sıralar
-        // LinkedHashSet : EKLENME SIRASIna göre sıralı tutar
-        // TreeSet       : HER ZAMAN SIRALI, kendinden sortlu
-
-        // Hızlı, bunun için kendine göre bir algoritmayla sıralı tutuyor
+        // HashSet: Fast, uses its own algorithm to maintain order (no guarantee of order)
         HashSet<String> hashSet = new HashSet<>();
-        hashSet.add("bir");
-        hashSet.add("iki");
-        hashSet.add("üç");
-        hashSet.add("dört");
-        hashSet.add("beş");
+        hashSet.add("one");
+        hashSet.add("two");
+        hashSet.add("three");
+        hashSet.add("four");
+        hashSet.add("five");
         System.out.println("Hash Set = " + hashSet);
+        // HashSet stores the elements without any specific order.
+        // This provides fast insertion, deletion, and lookup operations.
 
-        // EKLEME SIRASIna göre sıralı tutar
+        // LinkedHashSet: Maintains insertion order
         LinkedHashSet<String> linkedHashSet = new LinkedHashSet<>();
-        linkedHashSet.add("bir");
-        linkedHashSet.add("iki");
-        linkedHashSet.add("üç");
-        linkedHashSet.add("dört");
-        linkedHashSet.add("beş");
+        linkedHashSet.add("one");
+        linkedHashSet.add("two");
+        linkedHashSet.add("three");
+        linkedHashSet.add("four");
+        linkedHashSet.add("five");
         System.out.println("Linked Hash Set = " + linkedHashSet);
+        // LinkedHashSet stores the elements in the order they were inserted.
+        // This maintains the insertion order while providing fast access.
 
-        // KENDİNDEN SIRALI (SORTLU)
+        // TreeSet: Always sorted
         TreeSet<String> treeSet = new TreeSet<>();
-        treeSet.add("bir");
-        treeSet.add("iki");
-        treeSet.add("üç");
-        treeSet.add("dört");
-        treeSet.add("beş");
+        treeSet.add("one");
+        treeSet.add("two");
+        treeSet.add("three");
+        treeSet.add("four");
+        treeSet.add("five");
         System.out.println("Tree Set = " + treeSet);
+        // TreeSet stores the elements in their natural order or according to a specified comparator.
+        // This ensures that the elements are always sorted.
     }
 }
