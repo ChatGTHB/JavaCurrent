@@ -5,32 +5,29 @@ import java.util.TreeSet;
 
 public class _04_Sets {
     public static void main(String[] args) {
+        TreeSet<String> colors = new TreeSet<>();
+        colors.add("Red");
+        colors.add("Green");
+        colors.add("Blue");
+        colors.add("Red");
+        colors.add("RED");
 
-        TreeSet<String> renkler = new TreeSet<>();
-        renkler.add("Red");
-        renkler.add("Green");
-        renkler.add("Blue");
-        renkler.add("Red");
-        renkler.add("RED");
+        // Printing the entire set
+        System.out.println("colors = " + colors);
 
-        // Ekrana yazdırma (fotoğraf)
-        System.out.println("renkler = " + renkler);
+        // Printing each element individually using for-each loop
+        for (String element : colors) // order is guaranteed
+            System.out.println("element = " + element);
 
-        // Ekrana tek tek nasıl yazdırırım
-        for (String eleman : renkler) // sıra garanti değil
-            System.out.println("eleman = " + eleman);
+//        int[] array = {34, 5, 6, 7, 8, 89, 899, 77};
+//        for(int element : array)
+//            System.out.println("element = " + element);
 
-//        int[] dizi={34,5,6,7,8,89,899,77};
-//        for(int eleman : dizi)
-//            System.out.println("eleman = " + eleman);
-
-        // SETLERİ hafızadaki sırasına göre nasıl garanti olarak alırdım ?
-        Iterator gosterge = renkler.iterator(); // renklerin başına konumlandı
-        while (gosterge.hasNext()) // sıradaki eleman var ise
-        {
-            System.out.println("renkler = " + gosterge.next());
-            // sıradaki eleman
-            // .Next gostergenin gösterdiği elemanı temsil ediyor
+        // How to iterate through the set and guarantee the order in memory
+        Iterator<String> iterator = colors.iterator(); // positioned at the start of the set
+        while (iterator.hasNext()) { // while there are elements
+            System.out.println("color = " + iterator.next());
+            // .next() represents the current element the iterator points to
         }
     }
 }
