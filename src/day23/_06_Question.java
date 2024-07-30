@@ -6,36 +6,34 @@ import java.util.TreeSet;
 
 public class _06_Question {
     public static void main(String[] args) {
-
         /**
-         10 elamanlı bir diziyi random (10(dahil) a kadar olan sayılarla
-         doldurduktan sonra, tekrarlı değerleri almayacak şekilde yeni bir
-         diziye atınız.
+         Fill an array with 10 random integers (between 0 and 10, inclusive).
+         Then, create a new collection without any duplicate values.
          */
 
-        Integer[] dizi = new Integer[10];
+        // Creating an array with 10 elements
+        Integer[] array = new Integer[10];
 
-        for (int i = 0; i < dizi.length; i++) {
-            dizi[i] = (int) (Math.random() * 11);
+        // Filling the array with random numbers between 0 and 10
+        for (int i = 0; i < array.length; i++) {
+            array[i] = (int) (Math.random() * 11);
         }
 
-        System.out.println("dizi = " + Arrays.toString(dizi));
+        // Printing the original array
+        System.out.println("Array = " + Arrays.toString(array));
 
-        // 1.Yöntem
+        // Method 1: Using TreeSet and Collections.addAll
         TreeSet<Integer> treeSet1 = new TreeSet<>();
-        Collections.addAll(treeSet1, dizi);
-
+        Collections.addAll(treeSet1, array);
         System.out.println("Tree Set 1 = " + treeSet1);
 
-        // 2.Yöntem
-        TreeSet<Integer> treeSet2 = new TreeSet<>(Arrays.asList(dizi));
-
+        // Method 2: Using TreeSet constructor with Arrays.asList
+        TreeSet<Integer> treeSet2 = new TreeSet<>(Arrays.asList(array));
         System.out.println("Tree Set 2 = " + treeSet2);
 
-        // 3.Yöntem
+        // Method 3: Using TreeSet addAll method with Arrays.asList
         TreeSet<Integer> treeSet3 = new TreeSet<>();
-        treeSet3.addAll(Arrays.asList(dizi));
-
+        treeSet3.addAll(Arrays.asList(array));
         System.out.println("Tree Set 3 = " + treeSet3);
     }
 }
