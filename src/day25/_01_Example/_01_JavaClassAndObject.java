@@ -1,38 +1,39 @@
 package day25._01_Example;
 
-// Tiplerin yani class ların tanımlandığı yer
+// The place where types (classes) are defined
 
 import java.util.ArrayList;
 import java.util.Scanner;
 
 public class _01_JavaClassAndObject {
 
-    // Metot
+    // Method
     public static void main(String[] args) {
-        // Ana method : programın başladığı ve bittiği yer
+        // Main method: the starting and ending point of the program
+        int number;
+        Scanner scanner = new Scanner(System.in);
+        ArrayList<Integer> list = new ArrayList<>();
 
-        int sayi;
-        Scanner oku = new Scanner(System.in);
-        ArrayList<Integer> liste = new ArrayList<>();
+        // Creating an object of the class Araba
+        Araba myCar = new Araba();
+        myCar.color = "red";
+        myCar.year = 2024;
+        myCar.engineCapacity = 1600;
+        myCar.brand = "Togg";
 
-        Araba benimArabam = new Araba();
-        benimArabam.renk = "kırmızı";
-        benimArabam.yil = 2024;
-        benimArabam.motorHacmi = 1600;
-        benimArabam.marka = "Togg";
-
-        System.out.println("benimArabam.marka = " + benimArabam.marka);
-        System.out.println("benimArabam.yil = " + benimArabam.yil);
-        System.out.println("benimArabam.motorHacmi = " + benimArabam.motorHacmi);
-        System.out.println("benimArabam.renk = " + benimArabam.renk);
+        // Printing the properties of myCar
+        System.out.println("myCar.brand = " + myCar.brand);
+        System.out.println("myCar.year = " + myCar.year);
+        System.out.println("myCar.engineCapacity = " + myCar.engineCapacity);
+        System.out.println("myCar.color = " + myCar.color);
     }
-    // Metot
+    // Method
 }
 
-// Tiplerin yani classların tanımlandığı yer
+// The place where types (classes) are defined
 class Araba {
-    String renk;
-    int yil;
-    String marka;
-    int motorHacmi;
+    String color;
+    int year;
+    String brand;
+    int engineCapacity;
 }
