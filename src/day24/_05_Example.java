@@ -5,48 +5,73 @@ import java.util.Scanner;
 
 public class _05_Example {
     public static void main(String[] args) {
+        // A live dictionary application is desired.
+        // Display a menu to the user as follows:
+        // 1- Add (In this option, get the word itself and its meaning)
+        // 2- Update (In this option, let the user correct the meaning of a word)
+        // 3- List
+        // 4- Search (In this option, display the meaning of a given word)
+        // 5- Delete
+        // 6- Exit
 
-        // Canlı Sözlük yapılmak isteniyor.
-        // Kullanıcıya aşağıdaki gibi bir menü çıkarınız.
-        // 1- Ekleme (Bu secekte kelimenin kendisi alınız ve manasını alınız)
-        // 2- Düzeltme (Bu secenkte kullanıcının kelimenin manasını düzelttiriniz.)
-        // 3- Listeleme
-        // 4- Arama (Bu secekte verilen bir kelime nin manasını yazıdırnız)
-        // 5- Silme
-        // 6- Çıkış
+        // We need to access both the word and its meaning
+        Scanner intScanner = new Scanner(System.in);
+        Scanner strScanner = new Scanner(System.in);
+        HashMap<String, String> dictionary = new HashMap<>();
+        int choice = 0;
 
-        // Kelime ve manası, kelimeden de manaya ulaşabilmem lazım
-        Scanner okuInt = new Scanner(System.in);
-        Scanner okuStr = new Scanner(System.in);
-        HashMap<String, String> sozluk = new HashMap<>();
-        int secim = 0;
         do {
-            // kullanıcıya menüyü göster
-            System.out.print("MENÜ\n1-EKLEME\n2-DÜZLETME\n3-LİSTELEME" + "\n4-ARAMA\n5-SİLME\n6-ÇIKIŞ\nSeçiminiz=");
-            secim = okuInt.nextInt();
-            // seçimini al
-            // seçime göre işlemi yap
-            switch (secim) {
-                case 1: // ekleme işlemleri
-                    System.out.print("Kelime giriniz=");
-                    String kelime = okuStr.nextLine();
-                    System.out.print("Anlamı=");
-                    String anlami = okuStr.nextLine();
-                    sozluk.put(kelime, anlami);
-                    System.out.println("Ekleme işlemi yapılmıştır");
+            // Show the menu to the user
+            System.out.print("MENU\n1-ADD\n2-UPDATE\n3-LIST" +
+                    "\n4-SEARCH\n5-DELETE\n6-EXIT\nYour choice=");
+            choice = intScanner.nextInt();
+
+            // Perform the action based on the user's choice
+            switch (choice) {
+                case 1: // Add operation
+                    System.out.print("Enter the word=");
+                    String word = strScanner.nextLine();
+                    System.out.print("Meaning=");
+                    String meaning = strScanner.nextLine();
+                    dictionary.put(word, meaning);
+                    System.out.println("Add operation completed");
                     break;
-                case 2: //düzeltme işlemleri ;
+                case 2: // Update operation
+                    System.out.print("Enter the word to update=");
+                    word = strScanner.nextLine();
+                    if (dictionary.containsKey(word)) {
+                        System.out.print("New meaning=");
+                        meaning = strScanner.nextLine();
+                        dictionary.put(word, meaning);
+                        System.out.println("Update operation completed");
+                    } else {
+                        System.out.println("Word not found");
+                    }
                     break;
-                case 3: //listeleme işlemleri ;
+                case 3: // List operation
+                    System.out.println("Dictionary contents:");
+                    for (HashMap.Entry<String, String> entry : dictionary.entrySet()) {
+                        System.out.println(entry.getKey() + ": " + entry.getValue());
+                    }
                     break;
-                case 4: //arama işlemleri ;
-                    System.out.print("Aranan Kelime giriniz=");
-                    kelime = okuStr.nextLine();
-                    System.out.println(sozluk.get(kelime));
+                case 4: // Search operation
+                    System.out.print("Enter the word to search=");
+                    word = strScanner.nextLine();
+                    System.out.println("Meaning: " + dictionary.get(word));
                     break;
-                case 5: //silme işlemleri ;
+                case 5: // Delete operation
+                    System.out.print("Enter the word to delete=");
+                    word = strScanner.nextLine();
+                    if (dictionary.containsKey(word)) {
+                        dictionary.remove(word);
+                        System.out.println("Delete operation completed");
+                    } else {
+                        System.out.println("Word not found");
+                    }
                     break;
             }
-        } while (secim != 6);
+        } while (choice != 6);
+
+        System.out.println("Exiting...");
     }
 }

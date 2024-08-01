@@ -6,35 +6,37 @@ import java.util.TreeMap;
 
 public class _03_Map {
     public static void main(String[] args) {
+        // HashMap       : Works quickly and stores elements based on its own algorithm
+        // LinkedHashMap : Stores elements in the order they were inserted
+        // TreeMap       : Stores elements always sorted by the key
 
-        // HashMap       : Hızlı çalışmak için , kendi algoritmasına göre sırada saklar
-        // LinkedHashMap : Eklendiği sıraya göre içindeki elemanları saklar
-        // TreeMap       : İçideki elemanları herzaman KEY e göre sıralı saklar
-
+        // Creating a HashMap
         HashMap<Integer, String> hashMap = new HashMap<>();
-        hashMap.put(9, "tilki");
-        hashMap.put(2, "kedi");
-        hashMap.put(30, "köpek");
-        hashMap.put(11, "kuş");
-        hashMap.put(4, "kurt");
+        hashMap.put(9, "fox");
+        hashMap.put(2, "cat");
+        hashMap.put(30, "dog");
+        hashMap.put(11, "bird");
+        hashMap.put(4, "wolf");
 
         System.out.println("HashMap = " + hashMap);
 
+        // Creating a LinkedHashMap
         LinkedHashMap<Integer, String> linkedHashMap = new LinkedHashMap<>();
-        linkedHashMap.put(9, "tilki");
-        linkedHashMap.put(2, "kedi");
-        linkedHashMap.put(30, "köpek");
-        linkedHashMap.put(11, "kuş");
-        linkedHashMap.put(4, "kurt");
+        linkedHashMap.put(9, "fox");
+        linkedHashMap.put(2, "cat");
+        linkedHashMap.put(30, "dog");
+        linkedHashMap.put(11, "bird");
+        linkedHashMap.put(4, "wolf");
 
         System.out.println("LinkedHashMap = " + linkedHashMap);
 
+        // Creating a TreeMap
         TreeMap<Integer, String> treeMap = new TreeMap<>();
-        treeMap.put(9, "tilki");
-        treeMap.put(2, "kedi");
-        treeMap.put(30, "köpek");
-        treeMap.put(11, "kuş");
-        treeMap.put(4, "kurt");
+        treeMap.put(9, "fox");
+        treeMap.put(2, "cat");
+        treeMap.put(30, "dog");
+        treeMap.put(11, "bird");
+        treeMap.put(4, "wolf");
 
         System.out.println("TreeMap = " + treeMap);
     }
