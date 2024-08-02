@@ -1,4 +1,5 @@
-         Bir okulda kayıt programı için Ogrenci bilgilerini alan modül
-         yazılacaktır. Ogrenciye ait bilgiler (adi, soyadi, sinifi ve adres) vardır.
-         Bu yapıyı oluşturunuz. Bir tane öğrenci tanımlayarak
-         öğrenci bilgilerini kullanıcıdan alarak doldurunuz ve yazdırınız
+/*
+A module will be written to capture student information for a school registration program.
+The student’s information includes (firstName, lastName, grade, and address).
+Create this structure. Define a student, capture student information from the user, and print it.
+*/
