@@ -1,6 +1,8 @@
-        // Bir oto galeri için araba programı yapılmak isteniyor.
-        // Her arabanın arabaNo(int), marka(String) ve uretimYili(int) vardır.
-        // Kullanıcıdan 20 araba için bu bilgileri alınız.
-        // Bütün arabaları bir metodda yazdırınız.
-        // Galerinin uretimYılı ortalamasını yine bir metodda yazdırınız.
-        // Gerekli Class(lar) için ayrı dosya açınız
+/*
+    A car program is to be created for a car dealership.
+    Each car has a carNo (int), brand (String), and productionYear (int).
+    Get this information from the user for 20 cars.
+    Print all cars in a method.
+    Print the average production year of the dealership in another method.
+    Create necessary classes in separate files.
+*/
