@@ -1,6 +1,4 @@
- // Bir kampus programı için asagıdaki özellikte bilgilerin
- // kaydedileceği clasları yazınız.
- // Ogrenci : okulNo, Adı, Soyadi, okulu
- // Okul : okulAd, MudurAdi, okulAdres
- // Bu şekilde 1 öğrenci tanımlayıp bütün bilgileri kendiniz
- // atayıp  yazdırınız.
+// A module will be written to store student information for a campus program.
+// The student has the following information: school number, name, surname, class, and address.
+// Create this structure.
+// Then, define and populate the information for three students by getting the data from the user.
