@@ -1,18 +1,18 @@
 package day26._03_Example;
 
 public class Person {
-    String name; // properties, özellik, field
-    String surName;
+    String name; // properties, attributes, fields
+    String surname;
     int age;
 
-    //metodları yani davranişları
-    void BilgiYazdir() {
-        System.out.println("cal1.name = " + this.name);
-        System.out.println("cal1.surName = " + this.surName);
-        System.out.println("cal1.age = " + this.age);
-    } // this: bu yani kendisi manasında
+    // methods, i.e., behaviors
+    void printInfo() {
+        System.out.println("emp1.name = " + this.name);
+        System.out.println("emp1.surname = " + this.surname);
+        System.out.println("emp1.age = " + this.age);
+    } // this: refers to the current instance
 
-    void GetBirthYear() {
-        System.out.println("Birth Year=" + (2024 - this.age));
+    void getBirthYear() {
+        System.out.println("Birth Year = " + (2024 - this.age));
     }
 }
