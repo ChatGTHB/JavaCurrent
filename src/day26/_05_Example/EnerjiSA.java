@@ -2,18 +2,16 @@ package day26._05_Example;
 
 public class EnerjiSA {
     public static void main(String[] args) {
+        Customer customer1 = new Customer();
+        customer1.name = "John";
+        // customer1 : object,
+        // Customer  : Type, class
 
-        Musteri musteri1 = new Musteri();
+        customer1.electricityAccount.addConsumption(100); // January
+        customer1.electricityAccount.addConsumption(200); // February
+        customer1.electricityAccount.addConsumption(220); // March
 
-        musteri1.name = "Şeyma Nur";
-        // musteri1 : nesne,
-        // Musteri  : Tür,class,tip
-
-        musteri1.elektrikHesabi.tuketimEkle(100); // Ocak
-        musteri1.elektrikHesabi.tuketimEkle(200); // Şubat
-        musteri1.elektrikHesabi.tuketimEkle(220); // Mart
-
-        System.out.println("toplamTuketim = " + musteri1.elektrikHesabi.toplamTuketim);
-        musteri1.elektrikHesabi.faturaYaz(musteri1.name);
+        System.out.println("Total Consumption = " + customer1.electricityAccount.totalConsumption);
+        customer1.electricityAccount.printBill(customer1.name);
     }
 }
