@@ -1,14 +1,13 @@
 package day27._01_Example;
 
 public class Utility {
-
-    static int randomSayiVer2(int sinir) {
-        return (int) (Math.random() * sinir);
+    // Static method to generate a random number up to a given limit
+    static int getRandomNumberStatic(int limit) {
+        return (int) (Math.random() * limit);
     }
 
-    int randomSayiVer(int sinir) {
-        return (int) (Math.random() * sinir);
+    // Non-static method to generate a random number up to a given limit
+    int getRandomNumber(int limit) {
+        return (int) (Math.random() * limit);
     }
-
-
 }
