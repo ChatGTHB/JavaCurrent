@@ -1,0 +1,9 @@
+Task: 
+
+- Using 5 methods from the Math class, create your own methods in a separate class.
+- Ensure these methods can be used directly from the main method without creating an object instance.
+- Example:
+
+  getMax(A, B) {
+      return Math.max(A, B);
+  }

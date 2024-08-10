@@ -1,24 +1,28 @@
 package day27._02_Example;
 
 public class MyTool {
-
+    // Method to get the minimum of two numbers
     static int getMin(int a, int b) {
         return Math.min(a, b);
     }
 
+    // Method to get the maximum of two numbers
     static int getMax(int a, int b) {
         return Math.max(a, b);
     }
 
-    static int getRandom(int sinir) {
-        return (int) (Math.random() * sinir);
+    // Method to get a random number up to a specified limit
+    static int getRandom(int limit) {
+        return (int) (Math.random() * limit);
     }
 
-    static double getUsAl(int a, int b) {
-        return Math.pow(a, b);
+    // Method to raise a number to the power of another
+    static double getPower(int base, int exponent) {
+        return Math.pow(base, exponent);
     }
 
-    static double getKareKok(int a) {
-        return Math.sqrt(a);
+    // Method to get the square root of a number
+    static double getSquareRoot(int number) {
+        return Math.sqrt(number);
     }
 }

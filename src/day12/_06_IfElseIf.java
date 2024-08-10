@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class _06_IfElseIf {
     public static void main(String[] args) {
 
-        // Example: Get the grade from the user in the format "Physics:90".
+        // Task: Get the grade from the user in the format "Physics:90".
         // Print the corresponding letter grade based on the following:
         // >= 90 for A
         // >= 80 for B
