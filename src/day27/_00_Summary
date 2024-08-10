@@ -1,15 +1,24 @@
-Static ve Static olmayan metodların farkı ve kullanım amacı
+Difference and Purpose of Static and Non-Static Methods
 
--STATIC metodlar
- 1) Başına static kelimesi getirilir
- 2) Nesneyi değil GENELi yani tüm nesneleri kapsayan, yani nesne
-   bağımsız metodları nesne olusturmadan kullanmak için olusturulur.
- 3) Bu metodlar nesne özelinde değil, TİPe ait metodlar oldugu için
-   TİP adı ile direk kullanılabilirler.
- 4) Buna uygun Javada var olan örnek static metodlar Math.random gibi
-   veya Integer.parseInt() gibi fonksiyonlardır.
+Static Methods:
+1. Declaration: Static methods are declared with the `static` keyword.
+2. Purpose: They are used to perform operations that are general
+   and independent of specific objects.
+   Static methods can be called without creating an instance of the class.
+3. Usage: Since these methods belong to the class itself (not to specific objects),
+   they can be directly accessed using the class name.
+4. Examples: Examples of static methods in Java include
+   `Math.random()` and `Integer.parseInt()`.
 
--STATIC olmayan metodlar
- 1) Bu metodlar nesne özelinde çalışan metodlardır.
- 2) Nesne özelinde nesneye ait değerlerle çalışmak zorunda olduğu için
-    mutlaka new ile nesne oluşturulup. Nesne değişkeni ile kullanılırlar.
+Non-Static Methods:
+1. Object-Specific: Non-static methods operate on individual objects
+   and are specific to the instance they are called on.
+2. Instance Dependency: Since they work with the data of a particular object,
+   you must create an instance of the class (using `new`) and
+   call these methods through the instance variable.
+
+Summary:
+- Static Methods: Useful for tasks that do not depend on object-specific data,
+  allowing them to be called using the class name without needing an instance.
+- Non-Static Methods: Designed for operations that require access to the instance
+  variables of a particular object, necessitating the creation of an object instance to use them.
