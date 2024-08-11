@@ -4,8 +4,6 @@ import java.util.Scanner;
 
 public class School {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-
         Student student1 = new Student(); // Object creation moment
         student1.id = 1;
         student1.firstName = "John";
