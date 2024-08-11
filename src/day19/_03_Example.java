@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class _03_Example {
     public static void main(String[] args) {
-        // Question of the Day: Fill a 3x2 array with numbers taken from the user.
+        // Task of the Day: Fill a 3x2 array with numbers taken from the user.
         // Then, assign only the odd elements to a one-dimensional array.
 
         Scanner scanner = new Scanner(System.in);

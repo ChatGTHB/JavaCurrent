@@ -8,7 +8,7 @@ public class _11_LogicalExpressions {
         // and       &&
         // or        ||
 
-        // Question: If a number entered is greater than 0 and less than 100,
+        // Task: If a number entered is greater than 0 and less than 100,
         // it is a valid grade, if not, it is not a valid grade
 
         Scanner input = new Scanner(System.in);

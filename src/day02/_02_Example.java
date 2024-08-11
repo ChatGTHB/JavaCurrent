@@ -2,7 +2,7 @@ package day02;
 
 public class _02_Example {
     public static void main(String[] args) {
-        // Question: Write each letter of the word Monday on a separate line.
+        // Task: Write each letter of the word Monday on a separate line.
         System.out.println("M");
         System.out.println("o");
         System.out.println("n");

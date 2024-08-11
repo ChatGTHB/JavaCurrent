@@ -6,7 +6,7 @@ public class _09_JavaTernary {
     public static void main(String[] args) {
 
         /**
-         *    Question: Print whether an entered number is zero,
+         *    Task: Print whether an entered number is zero,
          *    negative or positive with the Ternary operator.
          */
 

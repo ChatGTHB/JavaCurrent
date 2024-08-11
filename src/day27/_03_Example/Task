@@ -1,0 +1,22 @@
+
+Task:
+
+- At a university, students will be registering for courses.
+1. `Lesson`: Fields: `name`, `hours` (values between 1 and 10).
+2. `Student`: Fields: `name`, `maxHours`, and a list called `lessons`
+   to keep track of the courses the student is enrolled in.
+3. Create 3 lessons.
+4. Define 1 student who can take a maximum of 10 hours (`maxHours`).
+5. Add the available lessons to this student's lesson list. While adding lessons,
+   ensure that the maximum allowed hours are not exceeded. If exceeded,
+   show a warning like "Maximum allowed hours exceeded."
+6. Add a method to print out 2 rules of the university at the beginning.
+
+Example lessons:
+- `Java101` 3 hours
+- `Alg101` 5 hours
+- `Math101` 6 hours
+
+Your student can take a maximum of 10 hours,
+so ensure this rule is followed when adding courses.
+

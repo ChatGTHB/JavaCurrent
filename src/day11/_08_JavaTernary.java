@@ -6,7 +6,7 @@ public class _08_JavaTernary {
     public static void main(String[] args) {
 
         /**
-         Question: If the number entered is greater than 50, print the value "Greater",
+         Task: If the number entered is greater than 50, print the value "Greater",
          if not, print the "Not" value on the screen. Do it with the ternary operator.
          */
 

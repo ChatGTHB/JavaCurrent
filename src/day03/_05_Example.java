@@ -5,7 +5,7 @@ public class _05_Example {
     public static void main(String[] args) {
 
         /**
-         * Question :
+         * Task :
          * The user received 2 donations.
          * Assign their integer amounts to 2 variables as 500 and 1000 TL.
          * Then print the total donation amount.
