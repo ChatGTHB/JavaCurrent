@@ -1,24 +1,32 @@
 package day28._04_Constructor;
 
 public class Bank {
-    String adi;
-    int subeSayisi;
-    int kurulusYili;
+    String name;
+    int branchCount;
+    int establishmentYear;
 
+    // Default constructor
     public Bank() {
     }
 
-    public Bank(String adi) {
-        this.adi = adi;
+    // Constructor with only the name
+    public Bank(String name) {
+        this.name = name;
     }
 
-    public Bank(String adi, int subeSayisi, int kurulusYili) {
-        this.adi = adi;
-        this.subeSayisi = subeSayisi;
-        this.kurulusYili = kurulusYili;
+    // Constructor with all fields
+    public Bank(String name, int branchCount, int establishmentYear) {
+        this.name = name;
+        this.branchCount = branchCount;
+        this.establishmentYear = establishmentYear;
     }
 
+    @Override
     public String toString() {
-        return "Banka{" + "adi='" + adi + '\'' + ", subeSayisi=" + subeSayisi + ", kurulusYili=" + kurulusYili + '}';
+        return "Bank{" +
+                "name='" + name + '\'' +
+                ", branchCount=" + branchCount +
+                ", establishmentYear=" + establishmentYear +
+                '}';
     }
 }

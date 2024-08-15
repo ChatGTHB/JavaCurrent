@@ -1,5 +1,5 @@
-    // Bir banka class ı tanımlayınız.
-    // 3 adet field ekleyiniz.(adi, subeSayisi, kurulusYili)
-    // 3 adet constructor ekleyin.
-    // toString metodu oluşturun.
-    // 3 tane nesne oluşturup mainde yazdırınız.
+// Define a Bank class.
+// Add 3 fields: name, branchCount, establishmentYear.
+// Add 3 constructors.
+// Create a toString method.
+// Create 3 objects and print them in the main method.
