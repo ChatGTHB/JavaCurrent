@@ -2,18 +2,18 @@ package day28._02_Constructor;
 
 public class Bookstore {
     public static void main(String[] args) {
+        Book book1 = new Book();
+        book1.name = "Harry Potter";
+        book1.publishYear = 1997;
+        book1.author = "J.K. Rowling";
 
-        Book kitap1 = new Book();
-        kitap1.name = "Harry Potter";
-        kitap1.publishYear = 1997;
-        kitap1.author = "JK Rowling";
+        Book book2 = new Book("The Lord of the Rings", 1954, "J.R.R. Tolkien");
 
-        Book kitap2 = new Book("Yüzükler", 1954, "JRR Tolkien");
+        Book book3 = new Book("Tea and Dried Grapes");
 
-        Book kitap3 = new Book("Çay ve Kuru Üzüm");
-
-        kitap1.kitapYazdir();
-        kitap2.kitapYazdir();
-        kitap3.kitapYazdir();
+        // Printing the details of each book
+        book1.printBookDetails();
+        book2.printBookDetails();
+        book3.printBookDetails();
     }
 }

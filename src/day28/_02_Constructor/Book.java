@@ -5,28 +5,31 @@ public class Book {
     int publishYear;
     String author;
 
-    Book() { // bir tane parametreli yapıcı metod
-        // eklendiğinde parametresiz olanını yazmak
-        // ZORUNLUDUR
+    // Default constructor
+    Book() {
+        // When a parameterized constructor is added,
+        // it's necessary to define the no-argument constructor as well.
         this.name = "";
         this.publishYear = 0;
         this.author = "";
     }
 
+    // Constructor with all fields
     Book(String name, int publishYear, String author) {
         this.name = name;
         this.publishYear = publishYear;
         this.author = author;
     }
 
+    // Constructor with only the name field
     Book(String name) {
         this.name = name;
         this.publishYear = 0;
         this.author = "";
     }
 
-    void kitapYazdir() {
+    // Method to print book details
+    void printBookDetails() {
         System.out.println(this.name + " " + this.publishYear + " " + this.author);
     }
-
 }
