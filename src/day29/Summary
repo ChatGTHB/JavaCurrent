@@ -1,17 +1,14 @@
-Erişim Belirteçleri - Access Modifiers
+Access Modifiers
 
-1-public : projenbin her yerinden erişim serbest
-           class, metod, field
+1. public: Accessible from anywhere in the project (class, method, field).
 
-2-default (hiçbir şey yazılmazsa, friendly) : sadece paketindekiler erişebilir
-           class, metod, field
+2. default (no keyword, also known as "friendly"): Accessible only within the same package (class, method, field).
 
-3-private : sadece kendi classın içindekiler erişebilir
-            metod , field
+3. private: Accessible only within the same class (method, field).
 
-4-protected : daha sonra anlatılacak : defaultla aynı
+4. protected: Will be explained later; similar to default.
 
-Erişim Seçenekleri
-1-Sadece Class ın içinden erişim
-2-Sadece Paketin içinden erişim
-3-Projenin her yerinden erişim
+Access Options
+1. Access only from within the class.
+2. Access only from within the package.
+3. Access from anywhere in the project.
