@@ -1,4 +1,4 @@
-package day30._01_StaticVariables.Ornek2;
+package day30._01_StaticVariables._02_Example;
 
 public class Student {
     private int id=1;

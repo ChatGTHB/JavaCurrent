@@ -1,4 +1,4 @@
-package day30._02_FinalVariables.Ornek2;
+package day30._02_FinalVariables._02_Example;
 
 public class NufusMemurlugu {
 

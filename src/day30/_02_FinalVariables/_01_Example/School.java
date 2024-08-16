@@ -1,4 +1,4 @@
-package day30._02_FinalVariables.Ornek1;
+package day30._02_FinalVariables._01_Example;
 
 
 public class School {
