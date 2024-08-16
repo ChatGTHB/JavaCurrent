@@ -1,0 +1,7 @@
+// Define a class named Constants to hold constant values for
+// the number of hours in a day, the number of minutes in an hour,
+// and the number of seconds in a minute.
+// In the main method, take input from the user for days, hours, and minutes,
+// then calculate the total number of seconds.
+
+
