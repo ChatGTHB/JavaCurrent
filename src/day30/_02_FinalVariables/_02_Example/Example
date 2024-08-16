@@ -1,4 +1,8 @@
-Vatandas tipinde bir değişkene ait (isim,adres,tcNo) field ları vardır.
-Devlet isimli içinde main olan  bölümde 3 vatandaş tanımlayınız ve yazdırınız.
-- Verilen TCNO int tipinde ve sıradan gitmelidir.
-- Verilen TCNO sonradan değiştirilmemelidir.
+
+Task:
+
+Create a `Citizen` class with fields: `name`, `address`, and `idNumber (TCNo)`.
+In the `Government` class (which contains the `main` method), define and print 3 citizens.
+
+- The `idNumber (TCNo)` should be of type `int` and should increment sequentially.
+- The `idNumber (TCNo)` should not be changeable after it is assigned.
