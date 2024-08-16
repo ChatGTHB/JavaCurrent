@@ -1,25 +1,24 @@
 package day30._01_StaticVariables._02_Example;
 
 public class Student {
-    private int id=1;
+    private int id = 1;
     String fullName;
-    private static int sayac=1;
-    // sen bitanesin,
-    // static olmadan herzaman 0 la başlıyordu
-    // static olduğunda artık bir tane olduğundan
-    // değerini korudu ve hep 1 tane arttı
-    // tüm nesnelere ait olan bilgileri veya
-    // sayac gibi işlemler için static kullanılır.
+    private static int counter = 1;
+    // You are unique,
+    // Without static, it would always start from 0.
+    // Since it's static, it maintains its value and increments by 1.
+    // Static is used for information shared among all objects or for operations like counters.
+
     public Student(int id, String fullName) {
         this.id = id;
         this.fullName = fullName;
-    }// maindeki ilk 4 satır için gerekli,
-    // static değişkenden sonra gerek kalmadı
+    } // Needed for the first 4 lines in the main method,
+    // but not required after the static variable is used.
 
     public Student(String fullName) {
         this.fullName = fullName;
-        this.id=sayac++;
-        //sayac=sayac+1;
+        this.id = counter++;
+        // counter = counter + 1;
     }
 
     @Override
