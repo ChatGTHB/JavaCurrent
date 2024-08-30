@@ -1,22 +1,22 @@
-package day31._03_EnumSoru;
+package day31._03_EnumQuestion;
 
 public class User {
     String userName;
     Role role;
-    Statu statu;
+    Status status;
 
-    public User(String userName, Role role, Statu statu) {
+    public User(String userName, Role role, Status status) {
         this.userName = userName;
         this.role = role;
-        this.statu = statu;
+        this.status = status;
     }
 
-    public static void userSil(User user){
+    public static void deleteUser(User user){
 
         if (user.role == Role.ADMIN)
-            System.out.println("Admin silinemez");
+            System.out.println("Admin cannot be deleted");
         else
-            user.statu= Statu.PASIF;
+            user.status = Status.INACTIVE;
     }
 
     @Override
@@ -24,7 +24,7 @@ public class User {
         return "User{" +
                 "userName='" + userName + '\'' +
                 ", role=" + role +
-                ", statu=" + statu +
+                ", status=" + status +
                 '}';
     }
 }

@@ -1,0 +1,17 @@
+
+Task: User Authorization Module
+
+1. Define a `User` class** with the following attributes:
+   - `username`
+   - `role` (values: `ADMIN`, `MANAGER`, `SALES`, `STAFF`)
+   - `status` (values: `ACTIVE`, `INACTIVE`)
+
+2. Create three users** with different roles and statuses, including one user with the `ADMIN` role.
+
+3. Implement a function named `deleteUser` that:
+   - Accepts a `User` object as a parameter.
+   - Checks the user's role.
+   - Displays a message indicating that the `ADMIN` user cannot be deleted.
+
+4. Test the function** by passing the created users to `deleteUser` and observing the output.
+
