@@ -1,0 +1,18 @@
+
+Task:
+Create a Car Object
+
+1. Define a `Car` class** with the following fields:
+   - `color` (String)
+   - `modelYear` (int) – the year of production
+   - `engineCapacity` (int) – possible values: 1000, 1400, 1900, 2000, 6000
+   - `numberOfDoors` (int)
+
+2. Implement getter and setter methods for each field, ensuring that the object adheres to
+   Object-Oriented Programming (OOP) principles, particularly encapsulation.
+
+3. In the `main` method:
+   - Create an instance of the `Car` class.
+   - Set the values of the fields using the setter methods.
+   - Retrieve and print the values using the getter methods to verify that
+     the object has been correctly initialized and the values are properly stored.
