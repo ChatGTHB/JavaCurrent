@@ -1,8 +1,8 @@
-package day31._04_EnumSoru;
+package day31._04_EnumQuestion;
 
 public class Pizza {
     PizzaSize size;
-    // ucret vs..
+    // additional attributes like price, etc.
 
     public Pizza(PizzaSize size) {
         this.size = size;

@@ -1,0 +1,13 @@
+
+Task:
+A pizza order system is required.
+
+1. Provide the user with a menu to select pizza sizes: 
+   - 1-Small
+   - 2-Medium
+   - 3-Large
+   - 4-Show
+
+2. Store the selected pizzas in an ArrayList.
+
+3. When the user selects "Show" (4), display the number of each pizza size ordered using a method.
