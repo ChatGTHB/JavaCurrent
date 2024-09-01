@@ -1,23 +1,22 @@
 package day31._05_Enum;
 
 public class AylarMain {
-
     public static void main(String[] args) {
+        /*
+         * Writing methods to:
+         * - Find the number of days in a month.
+         * - Get the month name in Turkish.
+         * - Retrieve the month number.
+         *
+         * Java suggests that if you need constant values associated with each
+         * enum element (e.g., for JANUARY -> January, 1, 31), and you want these
+         * constant values to be part of the enum itself, there is a good solution for you.
+         */
 
-        // Gun sayısını bulmak için bir metod yazıyorum
-        // Türkçe yazılışı bir metod gerekecekti
-        // Sıra numarası için de yine metod
+        Months month = Months.AUGUST;
 
-        // Java der ki eğer bu enum elemanları için
-        // her birine ait sabit değerlere ihtiyacın var ise
-        // mesala OCAK -> Ocak, 1, 31 gibi sabit değerlerinde
-        // SEMBOL un kendisinde olmasını istiyorsan sana güzel
-        // çözümüm var diyor
-
-        Aylar ay = Aylar.AGUSTOS;
-
-        System.out.println(ay.ayAd);
-        System.out.println(ay.ayNo);
-        System.out.println(ay.gunSayisi);
+        System.out.println(month.monthName);
+        System.out.println(month.monthNo);
+        System.out.println(month.daysCount);
     }
 }
