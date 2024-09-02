@@ -3,30 +3,30 @@ package day32._03_Encapsulation;
 import java.util.Scanner;
 
 public class CampusMain {
-
     public static void main(String[] args) {
+        Scanner scanInt = new Scanner(System.in);
+        Scanner scanStr = new Scanner(System.in);
 
-        Scanner okuInt = new Scanner(System.in);
-        Scanner okuStr = new Scanner(System.in);
-
-        Okul yeniOkul = new Okul("Yunus Emre Orta Okulu", 3); // max ogr 3
+        School newSchool = new School("Yunus Emre Middle School", 3); // max students: 3
 
         do {
-            System.out.print("Öğrenci Adı=");
-            String ad = okuStr.nextLine();
-            System.out.print("Öğrenci Soyadı=");
-            String soyad = okuStr.nextLine();
-            System.out.print("Öğrenci Yaşı=");
-            int yas = okuInt.nextInt();
+            System.out.print("Student Name=");
+            String name = scanStr.nextLine();
+            System.out.print("Student Surname=");
+            String surname = scanStr.nextLine();
+            System.out.print("Student Age=");
+            int age = scanInt.nextInt();
 
-            if (yas < 15) {
-                Ogrenci ogr = new Ogrenci(ad, soyad, yas);
-                yeniOkul.getOgrencileri().add(ogr);
-            } else System.out.println("Öğrenci yaşı okul için uyugn değil");
+            if (age < 15) {
+                Student student = new Student(name, surname, age);
+                newSchool.getStudents().add(student);
+            } else {
+                System.out.println("Student's age is not suitable for the school");
+            }
 
-        } while (yeniOkul.getOgrencileri().size() < yeniOkul.getKontenjan());
+        } while (newSchool.getStudents().size() < newSchool.getCapacity());
 
-        for (Ogrenci o : yeniOkul.getOgrencileri())
-            System.out.println("o = " + o);
+        for (Student s : newSchool.getStudents())
+            System.out.println("Student = " + s);
     }
 }
