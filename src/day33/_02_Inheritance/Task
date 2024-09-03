@@ -1,0 +1,8 @@
+
+Task:
+
+1. Create a `Animal` class with the fields: `color`, `weight`, `breed`, and `id`.
+2. Create a `Cat` class that extends `Animal`.
+3. Create a `Dog` class that extends `Animal`.
+4. Create a `Duck` class that extends `Animal` and includes an additional field for `wingLength`.
+5. Create a `Snake` class that extends `Animal` and includes an additional field for `length`.
