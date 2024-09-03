@@ -1,0 +1,24 @@
+Task:
+
+1. Define a class named `Employee` with the following fields: `name`, `baseSalary` (double), `salaryMultiplier` (int).
+2. Create a constructor for the `Employee` class and add a method named `calculateSalary()`
+   that returns the calculated salary as `baseSalary * salaryMultiplier`.
+3. Add a `toString()` method to the `Employee` class.
+4. Create a class named `GeneralManager` that extends `Employee` and adds an extra field `compensation` (double).
+5. In the `GeneralManager` class, override the `calculateSalary()` method to include the `compensation` in the salary calculation.
+6. Create a main class named `CompanyMain`. In this class, define an instance of an `Employee` and
+   an instance of a `GeneralManager`. Calculate their salaries and print the payroll.
+
+Methods:
+
+For `Employee`:
+
+public double calculateSalary() {
+    return baseSalary * salaryMultiplier;
+}
+
+For `GeneralManager`:
+
+public double calculateSalary() {
+    return baseSalary * salaryMultiplier + compensation;
+}
