@@ -1,0 +1,11 @@
+
+Task:
+
+1. Create a superclass named `Vehicle` with the fields:
+   `color` (default: black), `engineCapacity` (default: 1400), `brand` (default: BMW).
+2. Add a constructor to the `Vehicle` class.
+   Implement getter and setter methods for all fields, and override the `toString()` method.
+3. Create a class named `Bus` that extends the `Vehicle` class,
+   and add an additional field `passengerCapacity` to the `Bus` class.
+4. Create a class named `VehiclePark` with a `main` method.
+   In the `main` method, create an instance of `Bus` and print all of its attributes to the console.
