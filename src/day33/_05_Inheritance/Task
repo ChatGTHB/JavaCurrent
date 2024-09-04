@@ -1,0 +1,9 @@
+
+Task:
+
+1. Create a class named `Student` with fields: `id`, `name`, and `type` (ENUM: PRIMARY, MIDDLE, HIGH).
+2. Create a class named `HighSchoolStudent` that extends the `Student` class with an additional field: `branch` (String).
+3. Create a class named `PrimaryStudent` that extends the `Student` class with an additional field: `club` (String).
+4. Create a class named `MiddleSchoolStudent` that extends the `Student` class with an additional field: `exam` (String).
+5. In the `School` main class, create 3 students of different types.
+6. When creating each student, assign a unique number using a counter defined in the `Student` class.
