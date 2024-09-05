@@ -1,0 +1,19 @@
+
+Task:
+
+1. Create a class named `Student` with the fields: `firstName`, `lastName`, `role`, and `classSection` (String).
+2. Create a class named `Employee` with the fields: `firstName`, `lastName`, `role`, and `department` (String).
+3. Write a single method that generates an ID card (output) for the objects of both classes created from the above.
+   This method should be able to work with both classes.
+
+Hint: For both the `Student` and `Employee` classes to use the same method, what should happen?
+
+Example:
+
+public void printID(Kisi person) {
+    // print the ID for both Employee and Student
+}
+
+Both `Employee` and `Student` should extend a base class `Kisi` to work with the same method:
+- `printID(Employee employee)`
+- `printID(Student student)`
