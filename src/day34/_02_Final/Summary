@@ -1,0 +1,6 @@
+
+Final Summary
+
+When used with variables, the VALUE cannot be changed after initialization.
+When used with methods, they CANNOT be OVERRIDDEN.
+When used with classes, they CANNOT be EXTENDED.

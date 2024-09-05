@@ -1,9 +1,9 @@
-package day34._04_Final.method;
+package day34._02_Final.method;
 
-public class Araclar {
+public class Vehicles {
     private String model;
 
-    public Araclar(String model) {
+    public Vehicles(String model) {
         setModel(model);
     }
 
@@ -16,8 +16,8 @@ public class Araclar {
     }
 
     @Override
-    public final String toString() {
-        return "Araclar{" +
+    public final String toString() {  // final method cannot be overridden
+        return "Vehicles{" +
                 "model='" + model + '\'' +
                 '}';
     }
