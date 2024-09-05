@@ -1,14 +1,14 @@
-package day34._05_Polymorphism;
+package day34._03_Polymorphism;
 
-public class Hayvan {
+public class Animal {
     private String name;
 
-    public Hayvan(String name) {
+    public Animal(String name) {
         setName(name);
     }
 
-    public void ses() {
-        System.out.println("ses çıkardı");
+    public void sound() {
+        System.out.println("made a sound");
     }
 
     public String getName() {
