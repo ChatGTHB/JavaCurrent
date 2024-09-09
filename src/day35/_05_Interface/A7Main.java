@@ -1,13 +1,11 @@
 package day35._05_Interface;
 
 public class A7Main {
-
     public static void main(String[] args) {
+        A7 object = new A7();
 
-        A7 nesne = new A7();
-
-        nesne.goster();
-        nesne.yaz();
-        nesne.yaz("Merhaba Dünya");
+        object.display();
+        object.print();
+        object.print("Hello World");
     }
 }

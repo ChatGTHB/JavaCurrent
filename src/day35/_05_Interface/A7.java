@@ -1,18 +1,18 @@
 package day35._05_Interface;
 
-public class A7 implements IGosterir, IYazdirir {
+public class A7 implements IDisplayable, IPrintable {
     @Override
-    public void goster() {
-        System.out.println("Gösterdi.");
+    public void display() {
+        System.out.println("Displayed.");
     }
 
     @Override
-    public void yaz(String msg) {
+    public void print(String msg) {
         System.out.println("msg = " + msg);
     }
 
     @Override
-    public void yaz() {
-        System.out.println("Yazdırdı.");
+    public void print() {
+        System.out.println("Printed.");
     }
 }
