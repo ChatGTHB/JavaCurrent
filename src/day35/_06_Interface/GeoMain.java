@@ -1,15 +1,13 @@
 package day35._06_Interface;
 
 public class GeoMain {
-
     public static void main(String[] args) {
+        Rectangle rectangle = new Rectangle(4, 5);
+        System.out.println(rectangle.area());
+        System.out.println(rectangle.perimeter());
 
-        Dikdortgen d = new Dikdortgen(4, 5);
-        System.out.println(d.alani());
-        System.out.println(d.cevresi());
-
-        Kare k = new Kare(5);
-        System.out.println(k.alani());
-        System.out.println(k.cevresi());
+        Square square = new Square(5);
+        System.out.println(square.area());
+        System.out.println(square.perimeter());
     }
 }

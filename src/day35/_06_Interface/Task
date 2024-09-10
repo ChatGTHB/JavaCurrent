@@ -1,0 +1,8 @@
+
+Task:
+
+1. Create a `Shape` interface (or an abstract class) that includes the common methods `perimeter()` and `area()`.
+2. Implement the `Shape` interface in both `Square` and `Rectangle` classes.
+3. In the `main` method, create two objects (one for `Square` and one for `Rectangle`),
+   assign values to them, and print their perimeter and area.
+
