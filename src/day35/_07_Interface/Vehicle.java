@@ -1,6 +1,6 @@
 package day35._07_Interface;
 
-public class Vehicle { //süper class
+public class Vehicle {
     private double engine;
     private String model;
 

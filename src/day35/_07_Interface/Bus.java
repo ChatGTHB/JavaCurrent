@@ -8,11 +8,11 @@ public class Bus extends Vehicle implements IDiesel {
 
     @Override
     public String changeDiesel() {
-        return "Diesel al her 700km de";
+        return "Refuel diesel every 700 km";
     }
 
     @Override
     public String drive() {
-        return "yavaş sür";
+        return "Drive slowly";
     }
 }

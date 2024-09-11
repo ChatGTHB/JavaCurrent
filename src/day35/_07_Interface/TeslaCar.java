@@ -8,11 +8,11 @@ public class TeslaCar extends Vehicle implements IElectric {
 
     @Override
     public String changeBattery() {
-        return "her 100 binde battery change";
+        return "Battery change every 100,000";
     }
 
     @Override
     public String drive() {
-        return "auto drive";
+        return "Auto drive";
     }
 }

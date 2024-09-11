@@ -1,0 +1,22 @@
+
+Task:
+
+1. Create a base class `Vehicle` with common attributes such as 'model' and 'engine'.
+   This class should include basic functionalities that all vehicles share.
+
+2. Define interfaces to represent different types of vehicle capabilities:
+   - `IVehicle`: All vehicles should implement this for basic driving functions (`drive`).
+   - `IElectric`: For electric vehicles, with a method to change batteries (`changeBattery`).
+   - `IGas`: For gasoline-powered vehicles, with a method to change oil (`changeOil`).
+   - `IDiesel`: For diesel vehicles, with a method to handle diesel-specific maintenance tasks (`changeDiesel`).
+
+3. Implement these interfaces in specific vehicle classes:
+   - `TeslaCar` should implement the `IElectric` interface.
+   - `ToyotaPirus` should implement both the `IElectric` and `IGas` interfaces to represent its hybrid nature.
+   - `Bus` should implement the `IDiesel` interface.
+
+4. Write a main class `FactoryMain` to instantiate different types of vehicles, invoke their specific behavior,
+   and demonstrate the use of polymorphism and interface-based design.
+
+5. Output the behavior of each vehicle type to showcase the correct implementation of their respective interfaces
+   and inheritance from the `Vehicle` base class.

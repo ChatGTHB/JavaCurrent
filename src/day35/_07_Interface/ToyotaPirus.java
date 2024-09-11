@@ -7,16 +7,16 @@ public class ToyotaPirus extends Vehicle implements IElectric, IGas {
 
     @Override
     public String changeBattery() {
-        return "10bin de bir değiştir.";
+        return "Change every 10,000";
     }
 
     @Override
     public String changeOil() {
-        return "her 500km de Benzin al";
+        return "Refuel every 500 km";
     }
 
     @Override
     public String drive() {
-        return "istediğin gibi sür";
+        return "Drive as you like";
     }
 }
