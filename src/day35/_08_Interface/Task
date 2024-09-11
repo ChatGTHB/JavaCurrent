@@ -1,0 +1,8 @@
+
+Task:
+
+- Write the necessary modules (interfaces and classes) according to the provided UML diagram.
+- Then, create objects from each class.
+- (All methods should return a String).
+- Add the created objects to an ArrayList.
+- Finally, iterate through the ArrayList and print the output of the methods of each object.
