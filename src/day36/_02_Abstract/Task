@@ -1,0 +1,31 @@
+Task:
+
+1. Abstract Class Shape:
+   - Create an abstract class named Shape that has a name field.
+   - Add the following abstract methods:
+     - area(): to calculate the area.
+     - perimeter(): to calculate the perimeter.
+   - Add the following concrete methods:
+     - toString(): to return a string containing the shape's name, area, and perimeter.
+     - getName(): to return the name of the shape.
+     - draw(): to print the shape's name and that it has been drawn.
+
+2. Rectangle and Circle Classes:
+   - Create two classes called Rectangle and Circle that extend from the Shape class.
+   - Implement the area() and perimeter() methods in both classes.
+
+3. Main Class:
+   - Create instances of Rectangle and Circle in the main method and
+     test their functionality by printing their details using toString().
+
+Clarifications:
+
+- Concrete Method: A method with an implementation (body).
+    Example:
+    void draw() {
+        // This is a concrete method
+    }
+
+- Abstract Method: A method without an implementation (no body).
+    Example:
+    abstract void draw(); // Method signature
