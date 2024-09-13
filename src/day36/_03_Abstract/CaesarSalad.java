@@ -1,13 +1,13 @@
 package day36._03_Abstract;
 
-public class GreekSalad extends Salad {
+public class CaesarSalad extends Salad {
     @Override
     public String madeIn() {
-        return "Greece";
+        return "Mediterranean";
     }
 
     @Override
     public String taste() {
-        return "fresh, tangy, olive-oil";
+        return "creamy, tangy, parmesan";
     }
 }

@@ -1,9 +1,8 @@
 package day36._03_Abstract;
 
-public abstract class Sweet extends Food{
-
+public abstract class Sweet extends Food {
     @Override
-    void taste() {
-        System.out.println("İyi, şekerli, tatlı");
+    public String taste() {
+        return "good, sugar, sweet";
     }
 }

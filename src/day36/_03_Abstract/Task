@@ -1,0 +1,46 @@
+
+Task Description:
+
+Goal:
+Develop a Java class hierarchy based on the provided diagram that accurately models
+different types of foods, their origins, and their taste characteristics.
+This hierarchy should help in understanding the concepts of abstraction
+and inheritance in object-oriented programming.
+
+1. Abstract Class 'Food':
+   - Create an abstract class called 'Food'.
+   - Define two abstract methods:
+     - String madeIn(): Return the country of origin.
+     - String taste(): Provide a description of the taste.
+
+2. Abstract Class 'Sweet' (extends 'Food'):
+   - Override the taste() method to return "good, sugar, sweet".
+
+3. Abstract Class 'Salad' (extends 'Food'):
+   - Implement the taste() method to define various tastes for different salad types.
+
+4. Concrete Class 'Baklava' (extends 'Sweet'):
+   - Implement the madeIn() method to return "Turkey".
+
+5. Concrete Class 'CheeseCake' (extends 'Sweet'):
+   - Implement the madeIn() method to return "US".
+
+6. Concrete Class 'GreekSalad' (extends 'Salad'):
+   - Implement the madeIn() method to return "Greece".
+   - Override the taste() method to specify the unique taste of a Greek Salad.
+
+7. Concrete Class 'CaesarSalad' (extends 'Salad'):
+   - Implement the madeIn() method to return "Mediterranean".
+   - Override the taste() method to specify the unique taste of a Caesar Salad.
+
+8. Main Class 'FoodWorld':
+   - Instantiate each of the food classes: Baklava, CheeseCake, GreekSalad, and CaesarSalad.
+   - Print each object's name, country of origin, and taste by calling their respective methods.
+
+Expected Output Example:
+   - "Baklava: Made in Turkey, Tastes: good, sugar, sweet"
+   - "CheeseCake: Made in US, Tastes: good, sugar, sweet"
+   - "GreekSalad: Made in Greece, Tastes: fresh, tangy, olive-oil"
+   - "CaesarSalad: Made in Mediterranean, Tastes: creamy, tangy, parmesan"
+
+Ensure to implement the class hierarchy as depicted in the provided diagram and test the functionality as outlined.
