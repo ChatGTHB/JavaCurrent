@@ -1,0 +1,30 @@
+
+OOP (Object-Oriented Programming):
+
+Encapsulation:
+Encapsulation refers to restricting direct access to an object's data by making variables
+private and providing getter and setter methods to access and modify the data.
+
+Inheritance:
+Inheritance allows the creation of a new class (child class) based on an existing class (parent class).
+The child class inherits properties and methods from the parent class.
+This concept promotes code reuse for shared functionality across multiple classes.
+(e.g., the relationship between grandparent-parent-child).
+
+Polymorphism:
+Polymorphism allows objects of different classes that share a common parent class or
+implement a common interface to be treated as objects of the parent class.
+This enables the use of the same method on different objects,
+which can behave differently depending on their actual class. (e.g., cat and dog objects behaving differently).
+
+Interface:
+An interface defines a contract that enforces multiple classes to implement the same methods.
+It helps in planning the structure of the software by defining method signatures without implementation.
+(e.g., an interface for a Car class that all car models like ToyotaPrius must follow).
+
+Abstract Class:
+An abstract class combines the features of both interfaces and parent classes.
+If a class is meant to be partially implemented but still acts as a parent class with some concrete methods,
+an abstract class is used.
+It provides both method signatures (like an interface) and partial implementations (like a parent class).
+Think of it as a combination of interface and inheritance.
