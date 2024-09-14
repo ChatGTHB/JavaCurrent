@@ -6,41 +6,42 @@ import java.time.format.DateTimeFormatter;
 import java.util.Locale;
 
 public class _02_JavaLocalDate {
-
     public static void main(String[] args) {
-        // LocalDate Sadece gun ay yıl bilgisini tutar
-        LocalDate tarih = LocalDate.now();
+        // LocalDate stores only the date information like day, month, and year
+        LocalDate date = LocalDate.now();
 
-        DateTimeFormatter oz6 = DateTimeFormatter.ofPattern("MMMM dd EEEE yyyy");
-        System.out.println("tarih = " + tarih.format(oz6));
+        // Custom date formatter pattern
+        DateTimeFormatter customFormatter = DateTimeFormatter.ofPattern("MMMM dd EEEE yyyy");
+        System.out.println("date = " + date.format(customFormatter));
 
-        System.out.println("*** Başka dilde gösterim ***");
-        System.out.println("Almanca tarih=" + tarih.format(oz6.withLocale(Locale.GERMANY)));
+        System.out.println("*** Display in another language ***");
+        // Displaying the date in German
+        System.out.println("German date=" + date.format(customFormatter.withLocale(Locale.GERMANY)));
 
-        // Lokalizasyon tanımlama ne demek
-        // en-US : Amerikanın ingilizce konuşulan bölgesinin dili
-        // en-UK : İngilterenin ingilizce konuşulan bölgesinin dili
-        // fr-CA
-        // en-CA
-        // tr-TR
-        // zh-CH
+        // Explaining Localization
+        // en-US : English as spoken in the USA
+        // en-UK : English as spoken in the UK
+        // fr-CA : French as spoken in Canada
+        // en-CA : English as spoken in Canada
+        // tr-TR : Turkish as spoken in Turkey
+        // zh-CH : Chinese as spoken in China
 
-        Locale lCince = new Locale("zh", "CH"); // dil, ülke
-        System.out.println("Çince tarih=" + tarih.format(oz6.withLocale(lCince)));
+        Locale chineseLocale = new Locale("zh", "CH"); // language, country
+        System.out.println("Chinese date=" + date.format(customFormatter.withLocale(chineseLocale)));
 
-        Locale[] kullanilabilirLokaller = Locale.getAvailableLocales();
-
-        for (Locale l : kullanilabilirLokaller) {
-            System.out.print("Dili=" + l.getDisplayLanguage());
-            System.out.print(",Ülkesi=" + l.getDisplayCountry());
-            System.out.print(",Dili=" + l.getLanguage());
-            System.out.println(",Ülkesi=" + l.getCountry());
+        // Listing all available locales
+        Locale[] availableLocales = Locale.getAvailableLocales();
+        for (Locale locale : availableLocales) {
+            System.out.print("Language=" + locale.getDisplayLanguage());
+            System.out.print(",Country=" + locale.getDisplayCountry());
+            System.out.print(",Language code=" + locale.getLanguage());
+            System.out.println(",Country code=" + locale.getCountry());
         }
 
         System.out.println("*************");
-        // tarih = 2053-5-20 kendimiz bir tarih eşitlemesi nasıl yaabiliriz
-        LocalDate tarih1 = LocalDate.of(2053, 5, 20);
-        LocalDate tarih2 = LocalDate.of(2053, Month.MAY, 20);
-        System.out.println("tarih2.format(oz6) = " + tarih2.format(oz6));
+        // Example of setting a specific date
+        LocalDate specificDate1 = LocalDate.of(2053, 5, 20);
+        LocalDate specificDate2 = LocalDate.of(2053, Month.MAY, 20);
+        System.out.println("specificDate2 formatted = " + specificDate2.format(customFormatter));
     }
 }
