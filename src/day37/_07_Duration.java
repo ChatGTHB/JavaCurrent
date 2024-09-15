@@ -5,24 +5,25 @@ import java.time.LocalTime;
 
 public class _07_Duration {
     public static void main(String[] args) {
+        // Duration: Used to calculate the difference between LocalTime and LocalDateTime objects
+        long startTime = System.currentTimeMillis(); // Capture the current time in milliseconds
 
-        // Duration : localTime ve LocalDateTime lar arası fark için kullanılır
-        long startTime = System.currentTimeMillis(); // şu andaki milisaniye aldın
+        // LocalTime examples
+        LocalTime lessonStart = LocalTime.of(19, 0, 0); // Lesson start time: 7:00 PM
+        LocalTime lessonEnd = LocalTime.of(21, 50, 5);  // Lesson end time: 9:50 PM
 
-        //LocalTime
-        LocalTime dersBaslangic = LocalTime.of(19, 0, 0);
-        LocalTime dersBitis = LocalTime.of(21, 50, 5);
+        // Calculate the duration between start and end times
+        Duration lessonDuration = Duration.between(lessonStart, lessonEnd);
+        System.out.println("Lesson Duration = " + lessonDuration);
 
-        Duration gunlukDersSaati = Duration.between(dersBaslangic, dersBitis);
-        System.out.println("gunlukDersSaati = " + gunlukDersSaati);
+        // Convert and display the total duration in various units
+        System.out.println("Hours = " + lessonDuration.toHours()); // Total hours
+        System.out.println("Minutes = " + lessonDuration.toMinutes()); // Total minutes
+        System.out.println("Seconds = " + lessonDuration.getSeconds()); // Total seconds
 
-        System.out.println("toHours() = " + gunlukDersSaati.toHours()); // toplamın saat hali
-        System.out.println("toMinutes() = " + gunlukDersSaati.toMinutes()); // toplam dak hali
-        System.out.println("getSeconds() = " + gunlukDersSaati.getSeconds()); // toplam sn hali
+        System.out.println("******* Code Performance Measurement *******");
 
-        System.out.println("*******  Kodun performansı *******");
-
-        long finishTime = System.currentTimeMillis(); // şu andaki aldım
-        System.out.println("Geçen Süre = " + (finishTime - startTime) + " ms");
+        long endTime = System.currentTimeMillis(); // Capture the current time after execution
+        System.out.println("Elapsed Time = " + (endTime - startTime) + " ms"); // Display the execution time in milliseconds
     }
 }

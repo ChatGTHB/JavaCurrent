@@ -3,7 +3,7 @@ package day37;
 import java.time.LocalDate;
 import java.time.Period;
 
-public class _06_PeriodExample {
+public class _06_Period {
     public static void main(String[] args) {
         // Period is used to represent the difference between two dates.
         // It is used specifically for LocalDate instances.

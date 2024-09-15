@@ -3,7 +3,7 @@ package day37;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
-public class _05_LocalDateTimeExample {
+public class _05_LocalDateTime {
     public static void main(String[] args) {
         // LocalDateTime stores both date and time information
 
