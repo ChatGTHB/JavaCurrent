@@ -4,9 +4,7 @@ import java.time.LocalDate;
 import java.time.Period;
 
 public class _06_Period {
-
     public static void main(String[] args) {
-
         // Period 2 tarih arasındaki farkı tutar
         // LocalDate ler için kullanılır
 
