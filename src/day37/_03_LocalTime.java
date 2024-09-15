@@ -3,7 +3,7 @@ package day37;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 
-public class _03_JavaLocalTime {
+public class _03_LocalTime {
     public static void main(String[] args) {
         // LocalTime only stores time information like hour, minute, second, and nanosecond.
 

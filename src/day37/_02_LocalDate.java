@@ -5,7 +5,7 @@ import java.time.Month;
 import java.time.format.DateTimeFormatter;
 import java.util.Locale;
 
-public class _02_JavaLocalDate {
+public class _02_LocalDate {
     public static void main(String[] args) {
         // LocalDate stores only the date information like day, month, and year
         LocalDate date = LocalDate.now();

@@ -4,7 +4,7 @@ import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.time.format.FormatStyle;
 
-public class _01_JavaLocalDate {
+public class _01_LocalDate {
     public static void main(String[] args) {
         // LocalDate stores only the date information like day, month, and year
         LocalDate date = LocalDate.now();
