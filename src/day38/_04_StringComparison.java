@@ -30,4 +30,8 @@ public class _04_StringComparison {
         // Summary:
         // - '==' compares memory references, so it checks if two variables point to the same object.
         // - 'equals()' compares the actual values of the objects.
-        // - For object types like Strings, arrays, ArrayLists, or any other objects,
+        // - For object types like Strings, arrays, ArrayLists, or any other objects, ALWAYS use 'equals()' to compare values.
+        // - For primitive types like numbers (int, boolean, etc.), you can use '==' to compare values directly.
+
+    }
+}
