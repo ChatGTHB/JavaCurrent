@@ -1,114 +1,98 @@
 package day38;
 
 public class _01_StringBufferAndStringBuilder {
-
     public static void main(String[] args) {
+        // Example of String concatenation
+        String sentence = "";
 
-        String cumle = "";
+        sentence = sentence + "Today"; // + operator concatenates strings
+        sentence = sentence + " the weather";
+        sentence = sentence + " is cold";
 
-        cumle = cumle + "Bugün"; // + işareti stringlerde birleştirme yapar
-        cumle = cumle + " hava";
-        cumle = cumle + " soğuk";
+        System.out.println(sentence + " and snowy");
+        System.out.println(sentence); // if not assigned, the previous state remains
 
-        System.out.println(cumle + " ve karlı");
-        System.out.println(cumle); // atanmazsa en son hali geçerli
-
-        cumle.concat(", yaz mevsimini arıyoruz"); // concat de birleştirme yapar
-        System.out.println(cumle);
-        cumle = cumle.concat(", yaz mevsimini arıyoruz"); // atama gerektirir
-        System.out.println(cumle);
+        sentence.concat(", we are missing the summer"); // concat also concatenates strings
+        System.out.println(sentence); // but concat doesn't affect unless reassigned
+        sentence = sentence.concat(", we are missing the summer"); // reassignment required
+        System.out.println(sentence);
 
         System.out.println("\n****   StringBuilder *****");
-        /****   StringBuilder *****/
-        String cumle2 = "Bugün" + // atama gerektirmez
-                " hava" +
-                " soğuk";
 
-        System.out.println(cumle2);
+        /****   StringBuilder Example *****/
+        String sentence2 = "Today" + // no reassignment needed
+                " the weather" +
+                " is cold";
 
-        // +,concat, append(sb) : neden 3 tane var
+        System.out.println(sentence2);
+
+        // Why are there 3 ways to concatenate (+, concat, append)?
 
         long startTime = System.currentTimeMillis();
         String test1 = "";
-        for (int i = 0; i < 30000; i++)
-            test1 = test1 + " merhaba";
-
-        System.out.println("+ için geçen süre = " + (System.currentTimeMillis() - startTime) + " ms");
+        for (int i = 0; i < 30000; i++) {
+            test1 = test1 + " hello";  // using + operator
+        }
+        System.out.println("+ operator time = " + (System.currentTimeMillis() - startTime) + " ms");
 
         startTime = System.currentTimeMillis();
         String test2 = "";
-        for (int i = 0; i < 30000; i++)
-            test2 = test2.concat(" merhaba");
-
-        System.out.println("concat için geçen süre = " + (System.currentTimeMillis() - startTime) + " ms");
+        for (int i = 0; i < 30000; i++) {
+            test2 = test2.concat(" hello");  // using concat method
+        }
+        System.out.println("concat method time = " + (System.currentTimeMillis() - startTime) + " ms");
 
         startTime = System.currentTimeMillis();
         StringBuilder test3 = new StringBuilder();
-        for (int i = 0; i < 30000; i++)
-            test3.append(" merhaba"); // otomatik kendine ekliyor
+        for (int i = 0; i < 30000; i++) {
+            test3.append(" hello");  // using StringBuilder append method
+        }
+        System.out.println("StringBuilder time = " + (System.currentTimeMillis() - startTime) + " ms");
 
-        System.out.println("StringBuilder için geçen süre = " + (System.currentTimeMillis() - startTime) + " ms");
-
-        // Performans testi sonucu :
-        // eğer 3 kadar ekleme işlemi olacaksa + kullanılır, pratik olduğu için
-        // ancak daha fazla ekleme olacaksa 10 adede kadar concat kullanılabilir
-        // Eğer çok fazla String işlemleri yapacaksak bunun için
-        // performansı oldukça iyi olan StringBuilder kullanılır.
-        // yapısı gereği hızlı çalışır.
+        // Performance conclusion:
+        // If there are a few concatenations (3 or fewer), + can be used for simplicity.
+        // For up to 10 concatenations, concat can be used.
+        // If many string manipulations are required, StringBuilder is much faster and more efficient.
+        // Due to its structure, StringBuilder performs significantly better for multiple concatenations.
 
         System.out.println("***********************\n\n");
-        /****** StringBuilder ı biraz yakından tanıyalım    ***/
+
+        /****** Exploring StringBuilder Methods *****/
         StringBuilder sb = new StringBuilder();
-        sb.append("Bugün");  // kendine ekleme, atama gerektirmez, (+ da ve concat de gerekirdi)
-        sb.append(" hava");
-        sb.append(" soğuk");
+        sb.append("Today");  // appends to itself, no reassignment needed
+        sb.append(" the weather");
+        sb.append(" is cold");
         System.out.println("sb = " + sb);
 
-        System.out.println("sb.length() = " + sb.length());
-        sb.append(4); // eklenen diğer tipleri string otomatik çevirip ekler
+        System.out.println("sb.length() = " + sb.length());  // length of the string
+        sb.append(4); // appends other types (like int) as strings
         System.out.println("sb = " + sb);
 
-        sb.reverse(); // String tersine çeviriyor
+        sb.reverse(); // reverses the string
         System.out.println("sb = " + sb);
-        sb.reverse();
-        System.out.println("sb = " + sb);
-
-        sb.delete(0, 5); // (index)0 dahil , 5 hariç olmak üzere siler.
+        sb.reverse(); // reversing again
         System.out.println("sb = " + sb);
 
-        sb.deleteCharAt(3); // sadece belirtilen index deki karakteri siler
+        sb.delete(0, 5); // deletes characters from index 0 to 5 (5 excluded)
         System.out.println("sb = " + sb);
 
-        sb.insert(5, "kelime "); // 5 nolu index e kelime yi ekle : araya ekleme
+        sb.deleteCharAt(3); // deletes the character at index 3
         System.out.println("sb = " + sb);
 
-        sb = new StringBuilder("Bugün hava soğuk");
+        sb.insert(5, "word "); // inserts "word" at index 5
         System.out.println("sb = " + sb);
-        sb.replace(3, 8, "bu");
-        System.out.println("sb = " + sb); // verilen aralığı bu stringle değiştir
 
-        String strSb = sb.toString(); // bütün string fonk kullanılabilir.
+        sb = new StringBuilder("Today the weather is cold");
+        System.out.println("sb = " + sb);
+        sb.replace(3, 8, "this");  // replaces characters from index 3 to 8 with "this"
+        System.out.println("sb = " + sb);
 
+        String strSb = sb.toString(); // converts StringBuilder to a regular String for using string methods
 
-        StringBuffer sBuffer = new StringBuffer(); // tamamen StringBuilder ile aynı
-        // tek farkı, paralel çalıan yazılımlarda, StringBuffer kullanılır
-        // örnek olarak oyunlarda aynı anda çıkan düşman savaşçı aynı anda ateş ediyor, alttada bir log olsa
-        // yapılan işlemleri yazan string olarak bu durumda pararlel olan bu çalışmaya uygun sıralı birleştirme yapabilmesi lazım
-        // işte bu gibi durumlarda kullanılır.
+        /****** StringBuffer Example *****/
+        StringBuffer sBuffer = new StringBuffer();  // exactly the same as StringBuilder
+        // The only difference is that StringBuffer is thread-safe and can be used in parallel/concurrent environments.
+        // For example, in a game where multiple enemies attack at the same time and a log is recording actions,
+        // StringBuffer ensures thread-safe concatenation of logs from parallel processes.
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
