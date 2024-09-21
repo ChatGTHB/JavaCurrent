@@ -1,6 +1,6 @@
 package day39;
 
-public class _01_JavaException {
+public class _01_Exception {
     public static void main(String[] args) {
         // Exception -> unexpected, special case, error
 

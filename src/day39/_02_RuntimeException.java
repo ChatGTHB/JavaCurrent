@@ -2,7 +2,7 @@ package day39;
 
 import java.util.Scanner;
 
-public class _02_JavaRuntimeException {
+public class _02_RuntimeException {
     public static void main(String[] args) {
         System.out.println("The program has started");
 

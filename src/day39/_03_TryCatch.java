@@ -3,7 +3,7 @@ package day39;
 import java.time.LocalDate;
 import java.time.Month;
 
-public class _03_JavaTryCatch {
+public class _03_TryCatch {
     public static void main(String[] args) {
         System.out.println("The program has started");
 
