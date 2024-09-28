@@ -1,22 +1,25 @@
 package day39;
 
-public class _07_JavaCheckedveUncheckedException {  //throws InterruptedException
-
+public class _07_JavaCheckedveUncheckedException {  // throws InterruptedException
     public static void main(String[] args) {
+        String word = "";  // Using 'word' instead of 'kelime' for English consistency
 
-        String kelime = "";
-
+        // Unchecked Exception Example
         try {
-            char ilkHarf = kelime.charAt(0);
-            // sen bilirsin ister try catch e al, ister alma :  UnChecked Exception
-        } catch (Exception ex) {
-            System.out.println("Hata oluştu.");
+            char firstChar = word.charAt(0); // This can throw a StringIndexOutOfBoundsException
+            System.out.println("First character: " + firstChar);
+        } catch (StringIndexOutOfBoundsException ex) {
+            System.out.println("An error occurred: The string is empty.");
         }
 
+        // Checked Exception Example
         try {
-            Thread.sleep(1000); //Java nın zorunlu try catch tuttuğu kodlara Checked Exception
+            System.out.println("Pausing for 1 second...");
+            Thread.sleep(1000);  // This throws InterruptedException (Checked Exception)
         } catch (InterruptedException e) {
-            System.out.println("Hata oluştu.");
+            System.out.println("An error occurred: Thread was interrupted.");
         }
+
+        System.out.println("Program completed.");
     }
 }
