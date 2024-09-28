@@ -1,15 +1,13 @@
 package day40;
 
 public class S15 {
-
     public static void main(String[] args) {
-
         int[] array;
         array = new int[2];
 
-        //int array[]=new int[2];
-        //int[] array={10,20};
-        //int[] array=new int[]{10,20};
+        // int array[] = new int[2];
+        // int[] array = {10, 20};
+        // int[] array = new int[]{10, 20};
 
         array[0] = 10;
         array[1] = 20;
