@@ -1,6 +1,6 @@
 package day40;
 
-public class S15 {
+public class Q15 {
     public static void main(String[] args) {
         int[] array;
         array = new int[2];

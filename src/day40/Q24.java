@@ -1,6 +1,6 @@
 package day40;
 
-public class S24 {
+public class Q24 {
     public static void main(String[] args) {
         String[] strs = new String[2]; // null
 

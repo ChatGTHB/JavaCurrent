@@ -1,6 +1,6 @@
 package day40;
 
-public class S23 {
+public class Q23 {
     public static void main(String[] args) {
         int[] stack = {10, 20, 30}; // indices: 0, 1, 2
         int size = 3;

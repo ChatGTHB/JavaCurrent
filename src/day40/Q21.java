@@ -1,6 +1,6 @@
 package day40;
 
-public class S21 {
+public class Q21 {
     public static void main(String[] args) {
         int[] arr = {1, 2, 3, 4}; // indices: 0, 1, 2, 3
 
