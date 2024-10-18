@@ -18,7 +18,6 @@ public class Q16_2 {
             }
             continue;
         }
-
     }
 }
 // Output: A B D E
