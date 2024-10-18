@@ -1,6 +1,6 @@
 package day41;
 
-public class S16 {
+public class Q16 {
     public static void main(String[] args) {
         int cnt = 0;
         String[][] arr = {{"A", "B", "C"},   // row 0
