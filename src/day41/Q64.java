@@ -1,8 +1,6 @@
 package day41;
 
-public class S64 {
-
-
+public class Q64 {
     public static void main(String[] args) {
         String[] arr = {"A", "B", "C", "D"};
 
@@ -10,11 +8,11 @@ public class S64 {
             System.out.println(arr[i] + " "); // A
 
             if (arr[i].equals("C")) {
-                continue; //kendsiinden sonra gelenleri pass
+                continue; // skips the rest of the loop after "C"
             }
 
             System.out.println("Work Done"); // Work Done
-            break; // break: döngüyü kırar hatırla !
+            break; // break: remember, it breaks the loop!
         }
     }
 }
