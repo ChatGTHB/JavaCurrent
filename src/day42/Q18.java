@@ -1,9 +1,7 @@
 package day42;
 
-public class S18 {
-
+public class Q18 {
     public static void main(String[] args) {
-
         String[][] chs = new String[5][2]; // dizinin adı.length :satır sayısı
         chs[0] = new String[2];  // 0 ı yeniledim
         chs[1] = new String[5];  // 1 yeniledim
