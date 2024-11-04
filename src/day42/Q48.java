@@ -3,10 +3,8 @@ package day42;
 import java.util.ArrayList;
 import java.util.List;
 
-public class S48 {
-
+public class Q48 {
     public static void main(String[] args) {
-
         List colors = new ArrayList();
 
         colors.add("green");
