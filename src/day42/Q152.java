@@ -1,9 +1,7 @@
 package day42;
 
-public class S152 {
-
+public class Q152 {
     public static void main(String[] args) {
-
         int[][] n = {{1, 3},  //0.satır
                      {2, 4}}; //1.satır
 
