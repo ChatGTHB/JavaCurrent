@@ -12,12 +12,12 @@ public class Q48 {
         colors.add("red");
         colors.add("yellow");
 
-        colors.remove(2);
+        colors.remove(2); // Removes the element at index 2 ("red")
         System.out.println("colors = " + colors);
 
-        colors.add(3, "cyan"); // colors.add("cyan");
-        // son sıraya denk gelen indexe eklenebilir,
-        // ama ondan daha büyük bir indexe eklenemez hata veririr
+        colors.add(3, "cyan"); // Adds "cyan" at index 3 (last position in this case)
+        // It can only be added to an index equal to or smaller than the list size,
+        // but adding to an index larger than the list size will throw an error.
 
         System.out.println("colors = " + colors);
     }
