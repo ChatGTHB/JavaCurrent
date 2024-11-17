@@ -15,14 +15,14 @@ public class Q39 {
             }
         }
 
-        //b) small:
-        for (int index = 0; index < 2; ++index) { //0,1
-            for (int idx = 0; idx < index; ++idx) { // 0 da yok
+        // b) small:
+        for (int index = 0; index < 2; ++index) { // 0, 1
+            for (int idx = 0; idx < index; ++idx) { // No elements at index 0
                 System.out.println(shirts[index][idx] + ":");
             }
         }
 
-        // d) 2 sınır index değerini aştığı için RunTime hatası verir
+        // d) Causes a runtime error because the index 2 exceeds the boundary
 //        for (int index = 0; index <= 2; ) {
 //            for (int idx = 0; idx <= 2; ) {
 //                System.out.println(shirts[index][idx] + ":");
@@ -31,9 +31,9 @@ public class Q39 {
 //            index++;
 //        }
 
-        //c) doğru
-        for (String[] c : shirts) { // satırlara c adını vererek gönderiyor
-            for (String s : c) { // her satırdaki eleman s adını vererek yazdırıyor
+        // c) correct
+        for (String[] c : shirts) { // Sends each row and names it "c"
+            for (String s : c) { // Assigns each element in the row to "s" and prints it
                 System.out.println(s + ":");
             }
         }
